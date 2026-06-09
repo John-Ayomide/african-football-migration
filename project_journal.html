@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>African Football Migration — Project Journal</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,sans-serif;background:#0a0a0f;color:#e8e8f0;min-height:100vh;padding:40px 20px}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,160,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,160,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+.container{max-width:960px;margin:0 auto;position:relative;z-index:1}
+.header{margin-bottom:48px;border-bottom:1px solid #2a2a3a;padding-bottom:32px}
+.eyebrow{font-size:11px;color:#00e5a0;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.eyebrow::before{content:'';width:24px;height:1px;background:#00e5a0}
+h1{font-size:clamp(22px,4vw,36px);font-weight:700;line-height:1.2;margin-bottom:12px}
+h1 span{color:#00e5a0}
+.header-sub{color:#6b6b80;font-size:15px;margin-top:8px}
+.header-meta{font-size:14px;color:#6b6b80;display:flex;gap:24px;flex-wrap:wrap;margin-top:16px}
+.dot{width:6px;height:6px;border-radius:50%;background:#00e5a0;display:inline-block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:48px}
+.stat-card{background:#111118;border:1px solid #2a2a3a;border-radius:12px;padding:20px;position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--ac,#00e5a0)}
+.stat-label{font-size:11px;color:#6b6b80;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
+.stat-value{font-size:28px;font-weight:700;color:var(--ac,#00e5a0)}
+.stat-sub{font-size:12px;color:#6b6b80;margin-top:4px}
+.progress-wrap{background:#111118;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin-bottom:48px}
+.progress-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.progress-lbl{font-size:13px;color:#9999aa;text-transform:uppercase;letter-spacing:2px}
+.progress-pct{font-size:13px;color:#00e5a0}
+.progress-track{height:6px;background:#2a2a3a;border-radius:100px;overflow:hidden}
+.progress-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,#00e5a0,#7b61ff);transition:width 0.8s ease}
+.section-title{font-size:11px;color:#6b6b80;text-transform:uppercase;letter-spacing:3px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.section-title::after{content:'';flex:1;height:1px;background:#2a2a3a}
+.days-grid{display:flex;flex-direction:column;gap:16px;margin-bottom:48px}
+.day-card{background:#111118;border:1px solid #2a2a3a;border-radius:12px;overflow:hidden;transition:border-color 0.2s}
+.day-card.completed{border-color:rgba(0,229,160,0.3)}
+.day-card.active{border-color:#7b61ff}
+.day-card.locked{opacity:0.5;pointer-events:none}
+.day-card.active,.day-card.completed{pointer-events:all}
+.day-header{padding:20px 24px;display:flex;align-items:center;gap:16px;cursor:pointer;user-select:none}
+.day-num{font-size:11px;color:#6b6b80;text-transform:uppercase;letter-spacing:2px;min-width:50px}
+.day-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;border:1px solid #2a2a3a;transition:all 0.3s}
+.day-card.completed .day-icon{background:rgba(0,229,160,0.15);border-color:#00e5a0;color:#00e5a0}
+.day-card.active .day-icon{background:rgba(123,97,255,0.15);border-color:#7b61ff;color:#7b61ff;animation:activePulse 2s infinite}
+.day-card.locked .day-icon{color:#6b6b80}
+@keyframes activePulse{0%,100%{box-shadow:0 0 0 0 rgba(123,97,255,0.4)}50%{box-shadow:0 0 0 6px rgba(123,97,255,0)}}
+.day-info{flex:1}
+.day-title-text{font-size:15px;font-weight:600;color:#e8e8f0;margin-bottom:4px}
+.day-subtitle-text{font-size:13px;color:#6b6b80}
+.day-date-text{font-size:11px;color:#6b6b80;white-space:nowrap}
+.day-body{display:none;border-top:1px solid #2a2a3a}
+.day-body.open{display:block}
+.tabs{display:flex;border-bottom:1px solid #2a2a3a;padding:0 24px;background:#0d0d15;overflow-x:auto}
+.tab-btn{font-size:12px;padding:12px 16px;cursor:pointer;border:none;background:none;color:#6b6b80;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:inherit;transition:all 0.15s;white-space:nowrap}
+.tab-btn:hover{color:#9999aa}
+.tab-btn.active{color:#00e5a0;border-bottom-color:#00e5a0}
+.tab-panel{display:none;padding:24px}
+.tab-panel.active{display:block}
+.tasks-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.task-item{display:flex;align-items:flex-start;gap:12px;padding:12px 16px;background:#1a1a24;border-radius:8px;border:1px solid transparent;cursor:pointer;transition:all 0.15s;user-select:none}
+.task-item:hover{border-color:#2a2a3a}
+.task-item.done{opacity:0.6}
+.task-item.done .task-text{text-decoration:line-through;color:#6b6b80}
+.task-checkbox{width:18px;height:18px;border-radius:4px;border:1px solid #2a2a3a;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:11px;transition:all 0.15s;color:#6b6b80}
+.task-item.done .task-checkbox{background:#00e5a0;border-color:#00e5a0;color:#000}
+.task-text{font-size:14px;color:#9999aa;line-height:1.5;flex:1}
+.task-tag{margin-left:auto;font-size:10px;padding:2px 8px;border-radius:100px;background:#111118;border:1px solid #2a2a3a;color:#6b6b80;white-space:nowrap;flex-shrink:0}
+.findings-box{background:rgba(0,229,160,0.05);border:1px solid rgba(0,229,160,0.2);border-radius:8px;padding:16px;margin-top:16px}
+.findings-label{font-size:10px;color:#00e5a0;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}
+.findings-box p{font-size:13px;color:#9999aa;line-height:1.6}
+.finding-stat{font-size:16px;font-weight:700;color:#00e5a0}
+.skills-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.skill-chip{padding:4px 12px;border-radius:100px;font-size:12px;font-weight:500;border:1px solid}
+.sk-py{background:rgba(255,209,102,0.1);border-color:rgba(255,209,102,0.3);color:#ffd166}
+.sk-git{background:rgba(255,107,107,0.1);border-color:rgba(255,107,107,0.3);color:#ff6b6b}
+.sk-pd{background:rgba(0,229,160,0.1);border-color:rgba(0,229,160,0.3);color:#00e5a0}
+.sk-an{background:rgba(123,97,255,0.1);border-color:rgba(123,97,255,0.3);color:#7b61ff}
+.sk-af{background:rgba(255,165,0,0.1);border-color:rgba(255,165,0,0.3);color:#ffa500}
+.commit-badge{display:inline-flex;align-items:center;gap:6px;background:#1a1a24;border:1px solid #2a2a3a;border-radius:6px;padding:6px 12px;font-size:11px;color:#6b6b80;margin-top:12px}
+.commit-dot{width:8px;height:8px;border-radius:50%;background:#ffd166;flex-shrink:0}
+.code-section-lbl{font-size:11px;color:#6b6b80;text-transform:uppercase;letter-spacing:2px;margin:0 0 14px}
+.code-block{background:#0a0a0f;border:1px solid #2a2a3a;border-left:3px solid #00e5a0;border-radius:0 8px 8px 0;padding:16px;margin-bottom:16px}
+.code-step-lbl{font-size:10px;color:#00e5a0;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}
+.code-snippet{font-family:'Courier New',monospace;font-size:12px;color:#e8e8f0;line-height:1.8;white-space:pre-wrap;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #2a2a3a}
+.code-explain{font-size:13px;color:#9999aa;line-height:1.8}
+.code-explain strong{color:#e8e8f0;font-weight:600}
+.code-explain code{background:#1a1a24;padding:1px 6px;border-radius:4px;font-family:'Courier New',monospace;font-size:11px;color:#00e5a0}
+.why-box{background:#1a1a24;border-radius:8px;padding:16px;margin-bottom:12px}
+.why-lbl{font-size:10px;color:#6b6b80;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.why-txt{font-size:13px;color:#9999aa;line-height:1.8}
+.alt-box{background:#1a1a24;border:1px solid #2a2a3a;border-left:3px solid #7b61ff;border-radius:0 8px 8px 0;padding:16px;margin-bottom:12px}
+.alt-lbl{font-size:10px;color:#7b61ff;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.alt-txt{font-size:13px;color:#9999aa;line-height:1.8}
+.story-box{background:rgba(255,165,0,0.05);border:1px solid rgba(255,165,0,0.2);border-radius:8px;padding:16px;margin-bottom:12px}
+.story-lbl{font-size:10px;color:#ffa500;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
+.story-txt{font-size:13px;color:#9999aa;line-height:1.8}
+.complete-day-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid rgba(0,229,160,0.3);background:rgba(0,229,160,0.1);color:#00e5a0;font-family:inherit;transition:all 0.2s;margin-top:16px}
+.complete-day-btn:hover{background:rgba(0,229,160,0.2)}
+.undo-day-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid rgba(255,107,107,0.3);background:rgba(255,107,107,0.1);color:#ff6b6b;font-family:inherit;transition:all 0.2s;margin-top:16px;margin-left:8px}
+.btn-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(100px);background:#00e5a0;color:#000;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;transition:transform 0.3s ease;z-index:9999;pointer-events:none}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.footer{border-top:1px solid #2a2a3a;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-left{font-size:11px;color:#6b6b80}
+.github-link{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:#111118;border:1px solid #2a2a3a;border-radius:8px;font-size:13px;color:#9999aa;text-decoration:none;transition:all 0.2s}
+.github-link:hover{border-color:#00e5a0;color:#00e5a0}
+@media(max-width:600px){.stats-row{grid-template-columns:repeat(2,1fr)}.day-header{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="toast" id="toast"></div>
+<div class="container">
+
+<div class="header">
+  <div class="eyebrow">Portfolio Project 03 — Flagship Football Analytics</div>
+  <h1>Footballers from Africa and the <span>European Dream</span></h1>
+  <p class="header-sub">Data-driven investigation into African player migration, market value growth, and talent pathways in European football</p>
+  <div class="header-meta">
+    <span><span class="dot"></span>&nbsp;In Progress</span>
+    <span>Started: June 2026</span>
+    <span>1 hour/day</span>
+    <span>10 days total</span>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat-card" style="--ac:#00e5a0"><div class="stat-label">Days Complete</div><div class="stat-value" id="stat-days">0</div><div class="stat-sub">of 10 planned</div></div>
+  <div class="stat-card" style="--ac:#7b61ff"><div class="stat-label">Tasks Ticked</div><div class="stat-value" id="stat-tasks">0</div><div class="stat-sub">across all days</div></div>
+  <div class="stat-card" style="--ac:#ffa500"><div class="stat-label">Nations</div><div class="stat-value">15+</div><div class="stat-sub">African nations</div></div>
+  <div class="stat-card" style="--ac:#ff6b6b"><div class="stat-label">Project Type</div><div class="stat-value" style="font-size:16px;margin-top:4px">Flagship</div><div class="stat-sub">Career centrepiece</div></div>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-top">
+    <div class="progress-lbl">Overall Project Progress</div>
+    <div class="progress-pct" id="progress-pct">0%</div>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+</div>
+
+<div class="section-title">Daily Build Log</div>
+<div class="days-grid" id="days-grid">
+
+<!-- DAY 1 -->
+<div class="day-card" id="card-day-1">
+  <div class="day-header" onclick="tog(1)">
+    <span class="day-num">Day 01</span>
+    <div class="day-icon" id="icon-day-1">1</div>
+    <div class="day-info">
+      <div class="day-title-text">Project Setup &amp; GitHub</div>
+      <div class="day-subtitle-text">Environment, libraries, folder structure, first commit</div>
+    </div>
+    <span class="day-date-text" id="date-day-1">—</span>
+  </div>
+  <div class="day-body" id="body-day-1">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(1,'tasks')">Tasks</button>
+      <button class="tab-btn" onclick="st(1,'code')">Code &amp; Explanation</button>
+      <button class="tab-btn" onclick="st(1,'why')">Purpose &amp; Goals</button>
+    </div>
+    <div class="tab-panel active" id="tab-1-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t1-1" onclick="tick(1,1)"><div class="task-checkbox"></div><div class="task-text">Created project folder: african-football-migration with all subfolders</div><span class="task-tag">setup</span></li>
+        <li class="task-item" id="t1-2" onclick="tick(1,2)"><div class="task-checkbox"></div><div class="task-text">Created and activated Python virtual environment</div><span class="task-tag">setup</span></li>
+        <li class="task-item" id="t1-3" onclick="tick(1,3)"><div class="task-checkbox"></div><div class="task-text">Installed: pandas, numpy, matplotlib, seaborn, requests, beautifulsoup4, lxml, soccerdata, plotly, geopandas, scikit-learn, xgboost, jupyter, streamlit</div><span class="task-tag">setup</span></li>
+        <li class="task-item" id="t1-4" onclick="tick(1,4)"><div class="task-checkbox"></div><div class="task-text">Created requirements.txt and .gitignore</div><span class="task-tag">setup</span></li>
+        <li class="task-item" id="t1-5" onclick="tick(1,5)"><div class="task-checkbox"></div><div class="task-text">Created GitHub repository: african-football-migration</div><span class="task-tag">git</span></li>
+        <li class="task-item" id="t1-6" onclick="tick(1,6)"><div class="task-checkbox"></div><div class="task-text">Pushed initial commit to GitHub</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="skills-chips">
+        <span class="skill-chip sk-py">Python venv</span>
+        <span class="skill-chip sk-af">BeautifulSoup4</span>
+        <span class="skill-chip sk-af">soccerdata</span>
+        <span class="skill-chip sk-af">geopandas</span>
+        <span class="skill-chip sk-git">git init</span>
+      </div>
+      <div class="commit-badge"><div class="commit-dot"></div>"Initial setup — African football migration project"</div>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(1)">&#10003; Mark Day 1 Complete</button>
+        <button class="undo-day-btn" onclick="ud(1)">&#8635; Undo</button>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-1-code">
+      <p class="code-section-lbl">Key libraries explained</p>
+      <div class="code-block">
+        <div class="code-step-lbl">New libraries for this project</div>
+        <div class="code-snippet">pip install requests beautifulsoup4 lxml soccerdata plotly geopandas</div>
+        <div class="code-explain"><strong>requests</strong> — sends HTTP requests to websites. This is how we fetch web pages to scrape data from Transfermarkt and other sources.<br><br><strong>beautifulsoup4 + lxml</strong> — parses HTML from web pages and extracts the data we need. BeautifulSoup is the standard web scraping library in Python. lxml is the fast HTML parser it uses underneath.<br><br><strong>soccerdata</strong> — a Python library that provides clean access to FBref, Sofascore, and other football data sources without needing to scrape manually.<br><br><strong>plotly</strong> — creates interactive charts (hover, zoom, filter) unlike matplotlib which creates static images. Used for the migration flow maps and interactive visualisations.<br><br><strong>geopandas</strong> — extends pandas to support geographic data. Lets us create choropleth maps of Africa showing player counts and success rates by country.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-1-why">
+      <div class="why-box"><div class="why-lbl">Purpose of Day 1</div><div class="why-txt">Same professional foundation as Projects 1 and 2 — but this project introduces web scraping and geospatial libraries. These are new skills that expand your technical toolkit significantly. Web scraping is one of the most in-demand data skills because most real-world data does not come in a clean CSV file.</div></div>
+      <div class="story-box"><div class="story-lbl">The story we are telling</div><div class="story-txt">Africa has been producing world-class footballers for decades — Mané, Salah, Drogba, Eto'o, Yaya Touré, Osimhen. But the data story behind how they get to Europe, which nations produce the most, how their market values grow, and who the next generation are — has never been told as a complete analytical piece. This project tells that story.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 2 -->
+<div class="day-card" id="card-day-2">
+  <div class="day-header" onclick="tog(2)">
+    <span class="day-num">Day 02</span>
+    <div class="day-icon" id="icon-day-2">2</div>
+    <div class="day-info">
+      <div class="day-title-text">Data Collection — African Players Database</div>
+      <div class="day-subtitle-text">Scrape and build database of African players in European football</div>
+    </div>
+    <span class="day-date-text" id="date-day-2">—</span>
+  </div>
+  <div class="day-body" id="body-day-2">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(2,'tasks')">Tasks</button>
+      <button class="tab-btn" onclick="st(2,'code')">Code &amp; Explanation</button>
+      <button class="tab-btn" onclick="st(2,'why')">Purpose &amp; Goals</button>
+    </div>
+    <div class="tab-panel active" id="tab-2-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t2-1" onclick="tick(2,1)"><div class="task-checkbox"></div><div class="task-text">Created 01_data_collection.ipynb</div><span class="task-tag">jupyter</span></li>
+        <li class="task-item" id="t2-2" onclick="tick(2,2)"><div class="task-checkbox"></div><div class="task-text">Defined list of 15+ African nations to analyse</div><span class="task-tag">planning</span></li>
+        <li class="task-item" id="t2-3" onclick="tick(2,3)"><div class="task-checkbox"></div><div class="task-text">Scraped African player data from Transfermarkt</div><span class="task-tag">scraping</span></li>
+        <li class="task-item" id="t2-4" onclick="tick(2,4)"><div class="task-checkbox"></div><div class="task-text">Collected: player name, nationality, current club, current league, market value, age, position</div><span class="task-tag">data</span></li>
+        <li class="task-item" id="t2-5" onclick="tick(2,5)"><div class="task-checkbox"></div><div class="task-text">Saved raw data to data/raw/african_players_raw.csv</div><span class="task-tag">data</span></li>
+        <li class="task-item" id="t2-6" onclick="tick(2,6)"><div class="task-checkbox"></div><div class="task-text">First exploration — how many players per nation?</div><span class="task-tag">eda</span></li>
+        <li class="task-item" id="t2-7" onclick="tick(2,7)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed to GitHub</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="skills-chips">
+        <span class="skill-chip sk-af">requests</span>
+        <span class="skill-chip sk-af">BeautifulSoup</span>
+        <span class="skill-chip sk-pd">pandas</span>
+        <span class="skill-chip sk-an">web scraping</span>
+      </div>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(2)">&#10003; Mark Day 2 Complete</button>
+        <button class="undo-day-btn" onclick="ud(2)">&#8635; Undo</button>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-2-code">
+      <p class="code-section-lbl">Web scraping explained</p>
+      <div class="code-block">
+        <div class="code-step-lbl">How web scraping works</div>
+        <div class="code-snippet">import requests
+from bs4 import BeautifulSoup
+
+headers = {'User-Agent': 'Mozilla/5.0'}
+url = 'https://www.transfermarkt.com/...'
+response = requests.get(url, headers=headers)
+soup = BeautifulSoup(response.content, 'lxml')
+table = soup.find('table', {'class': 'items'})</div>
+        <div class="code-explain"><strong>How it works:</strong> <code>requests.get()</code> sends an HTTP request to the website — exactly like your browser does when you visit a page. The response contains the full HTML of the page.<br><br><strong>Why headers?</strong> Websites can detect and block automated requests. Including a <code>User-Agent</code> header makes our request look like it came from a real browser rather than a script.<br><br><strong>BeautifulSoup</strong> parses the HTML and gives us tools to find specific elements — tables, rows, cells — just like selecting elements in JavaScript. <code>soup.find()</code> locates the first matching element. <code>soup.find_all()</code> finds all matching elements.<br><br><strong>Ethical scraping rules:</strong> Always add delays between requests (time.sleep), never overload a server, respect robots.txt, and only scrape publicly available data.</div>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-2-why">
+      <div class="why-box"><div class="why-lbl">Purpose of Day 2</div><div class="why-txt">This is the most technically challenging data collection of the three projects. Real-world football data does not come in a clean API like StatsBomb — you have to go and get it. Learning to scrape Transfermarkt is a genuinely employable skill that most portfolio projects skip.</div></div>
+      <div class="story-box"><div class="story-lbl">What we are building</div><div class="story-txt">A database of African footballers currently playing in European leagues — their nationality, position, market value, age, and current club. This becomes the foundation for all subsequent analysis: migration patterns, value growth, success rates, and the ML model that identifies undervalued talent.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 3 -->
+<div class="day-card" id="card-day-3">
+  <div class="day-header" onclick="tog(3)">
+    <span class="day-num">Day 03</span>
+    <div class="day-icon" id="icon-day-3">3</div>
+    <div class="day-info">
+      <div class="day-title-text">Data Cleaning &amp; Nation Analysis</div>
+      <div class="day-subtitle-text">Clean scraped data, analyse which nations produce the most players</div>
+    </div>
+    <span class="day-date-text" id="date-day-3">—</span>
+  </div>
+  <div class="day-body" id="body-day-3">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(3,'tasks')">Tasks</button>
+      <button class="tab-btn" onclick="st(3,'why')">Purpose &amp; Goals</button>
+    </div>
+    <div class="tab-panel active" id="tab-3-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t3-1" onclick="tick(3,1)"><div class="task-checkbox"></div><div class="task-text">Created 02_data_cleaning.ipynb</div><span class="task-tag">jupyter</span></li>
+        <li class="task-item" id="t3-2" onclick="tick(3,2)"><div class="task-checkbox"></div><div class="task-text">Cleaned market value column — converted text to numeric (e.g. "€45.0m" → 45000000)</div><span class="task-tag">cleaning</span></li>
+        <li class="task-item" id="t3-3" onclick="tick(3,3)"><div class="task-checkbox"></div><div class="task-text">Standardised nationality names across all rows</div><span class="task-tag">cleaning</span></li>
+        <li class="task-item" id="t3-4" onclick="tick(3,4)"><div class="task-checkbox"></div><div class="task-text">Classified leagues into tiers (Top 5, Second tier, Lower)</div><span class="task-tag">engineering</span></li>
+        <li class="task-item" id="t3-5" onclick="tick(3,5)"><div class="task-checkbox"></div><div class="task-text">Analysed player count by African nation</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t3-6" onclick="tick(3,6)"><div class="task-checkbox"></div><div class="task-text">Analysed player count by European destination league</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t3-7" onclick="tick(3,7)"><div class="task-checkbox"></div><div class="task-text">Saved clean data to data/processed/african_players_clean.csv</div><span class="task-tag">data</span></li>
+        <li class="task-item" id="t3-8" onclick="tick(3,8)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(3)">&#10003; Mark Day 3 Complete</button>
+        <button class="undo-day-btn" onclick="ud(3)">&#8635; Undo</button>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-3-why">
+      <div class="why-box"><div class="why-lbl">Purpose of Day 3</div><div class="why-txt">Market value data from Transfermarkt comes in text format — "€45.0m", "€500k". This needs parsing into numbers before any analysis can happen. This is a common real-world data cleaning challenge that interviewers love to ask about.</div></div>
+      <div class="story-box"><div class="story-lbl">The story chapter</div><div class="story-txt">Chapter 1 of the data story: Where do African footballers come from and where do they go? Nigeria, Senegal, Morocco, Ghana, Ivory Coast — which nation exports the most talent? Which European leagues absorb the most African players? This is the foundation of the migration story.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 4 -->
+<div class="day-card" id="card-day-4">
+  <div class="day-header" onclick="tog(4)">
+    <span class="day-num">Day 04</span>
+    <div class="day-icon" id="icon-day-4">4</div>
+    <div class="day-info">
+      <div class="day-title-text">Migration Maps &amp; Visualisations</div>
+      <div class="day-subtitle-text">Build choropleth map, bar charts, and migration flow visualisations</div>
+    </div>
+    <span class="day-date-text" id="date-day-4">—</span>
+  </div>
+  <div class="day-body" id="body-day-4">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(4,'tasks')">Tasks</button>
+      <button class="tab-btn" onclick="st(4,'why')">Purpose &amp; Goals</button>
+    </div>
+    <div class="tab-panel active" id="tab-4-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t4-1" onclick="tick(4,1)"><div class="task-checkbox"></div><div class="task-text">Created 03_visualisation.ipynb</div><span class="task-tag">jupyter</span></li>
+        <li class="task-item" id="t4-2" onclick="tick(4,2)"><div class="task-checkbox"></div><div class="task-text">Built Africa choropleth map — nations coloured by player count</div><span class="task-tag">geopandas</span></li>
+        <li class="task-item" id="t4-3" onclick="tick(4,3)"><div class="task-checkbox"></div><div class="task-text">Built top 10 nations bar chart by player count in European leagues</div><span class="task-tag">matplotlib</span></li>
+        <li class="task-item" id="t4-4" onclick="tick(4,4)"><div class="task-checkbox"></div><div class="task-text">Built destination league distribution chart</div><span class="task-tag">matplotlib</span></li>
+        <li class="task-item" id="t4-5" onclick="tick(4,5)"><div class="task-checkbox"></div><div class="task-text">Built market value distribution by nationality</div><span class="task-tag">seaborn</span></li>
+        <li class="task-item" id="t4-6" onclick="tick(4,6)"><div class="task-checkbox"></div><div class="task-text">Saved all charts to reports/ at 300 DPI</div><span class="task-tag">output</span></li>
+        <li class="task-item" id="t4-7" onclick="tick(4,7)"><div class="task-checkbox"></div><div class="task-text">Wrote analytical observations for each chart</div><span class="task-tag">docs</span></li>
+        <li class="task-item" id="t4-8" onclick="tick(4,8)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(4)">&#10003; Mark Day 4 Complete</button>
+        <button class="undo-day-btn" onclick="ud(4)">&#8635; Undo</button>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-4-why">
+      <div class="why-box"><div class="why-lbl">Purpose of Day 4</div><div class="why-txt">The choropleth map of Africa coloured by player count is the hero visual of this project. It is immediately understandable, visually striking, and tells the migration story at a glance. This is the chart that gets shared on LinkedIn and makes recruiters stop scrolling.</div></div>
+      <div class="story-box"><div class="story-lbl">Why geospatial matters</div><div class="story-txt">Geopandas choropleth maps add a dimension that bar charts cannot — geographic context. Seeing that Nigeria, Senegal and Morocco light up while Central African nations remain dark tells a richer story than a list of numbers. Geography IS the story here.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 5 -->
+<div class="day-card" id="card-day-5">
+  <div class="day-header" onclick="tog(5)">
+    <span class="day-num">Day 05</span>
+    <div class="day-icon" id="icon-day-5">5</div>
+    <div class="day-info">
+      <div class="day-title-text">Market Value &amp; Success Analysis</div>
+      <div class="day-subtitle-text">Which nations produce the highest value players? Age vs market value?</div>
+    </div>
+    <span class="day-date-text" id="date-day-5">—</span>
+  </div>
+  <div class="day-body" id="body-day-5">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(5,'tasks')">Tasks</button>
+    </div>
+    <div class="tab-panel active" id="tab-5-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t5-1" onclick="tick(5,1)"><div class="task-checkbox"></div><div class="task-text">Created 04_market_value_analysis.ipynb</div><span class="task-tag">jupyter</span></li>
+        <li class="task-item" id="t5-2" onclick="tick(5,2)"><div class="task-checkbox"></div><div class="task-text">Average market value by African nation — which produces highest value players?</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t5-3" onclick="tick(5,3)"><div class="task-checkbox"></div><div class="task-text">Age vs market value scatter — when do African players peak?</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t5-4" onclick="tick(5,4)"><div class="task-checkbox"></div><div class="task-text">Market value by league tier — Top 5 vs lower leagues</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t5-5" onclick="tick(5,5)"><div class="task-checkbox"></div><div class="task-text">Top 20 highest value African players currently in Europe</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t5-6" onclick="tick(5,6)"><div class="task-checkbox"></div><div class="task-text">Position breakdown — which positions do African players occupy?</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t5-7" onclick="tick(5,7)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(5)">&#10003; Mark Day 5 Complete</button>
+        <button class="undo-day-btn" onclick="ud(5)">&#8635; Undo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 6 -->
+<div class="day-card" id="card-day-6">
+  <div class="day-header" onclick="tog(6)">
+    <span class="day-num">Day 06</span>
+    <div class="day-icon" id="icon-day-6">6</div>
+    <div class="day-info">
+      <div class="day-title-text">Machine Learning — Undervalued Talent Identifier</div>
+      <div class="day-subtitle-text">Build ML model to identify statistically undervalued African players</div>
+    </div>
+    <span class="day-date-text" id="date-day-6">—</span>
+  </div>
+  <div class="day-body" id="body-day-6">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(6,'tasks')">Tasks</button>
+      <button class="tab-btn" onclick="st(6,'why')">Purpose &amp; Goals</button>
+    </div>
+    <div class="tab-panel active" id="tab-6-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t6-1" onclick="tick(6,1)"><div class="task-checkbox"></div><div class="task-text">Created 05_ml_undervalued.ipynb</div><span class="task-tag">jupyter</span></li>
+        <li class="task-item" id="t6-2" onclick="tick(6,2)"><div class="task-checkbox"></div><div class="task-text">Feature engineering: age, position, league tier, nationality success rate</div><span class="task-tag">engineering</span></li>
+        <li class="task-item" id="t6-3" onclick="tick(6,3)"><div class="task-checkbox"></div><div class="task-text">Built market value prediction model using XGBoost</div><span class="task-tag">ml</span></li>
+        <li class="task-item" id="t6-4" onclick="tick(6,4)"><div class="task-checkbox"></div><div class="task-text">Identified players where actual value is far below predicted value</div><span class="task-tag">analysis</span></li>
+        <li class="task-item" id="t6-5" onclick="tick(6,5)"><div class="task-checkbox"></div><div class="task-text">Generated top 10 statistically undervalued African players list</div><span class="task-tag">scouting</span></li>
+        <li class="task-item" id="t6-6" onclick="tick(6,6)"><div class="task-checkbox"></div><div class="task-text">SHAP analysis — what features drive African player market value?</div><span class="task-tag">shap</span></li>
+        <li class="task-item" id="t6-7" onclick="tick(6,7)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(6)">&#10003; Mark Day 6 Complete</button>
+        <button class="undo-day-btn" onclick="ud(6)">&#8635; Undo</button>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-6-why">
+      <div class="why-box"><div class="why-lbl">Purpose of Day 6</div><div class="why-txt">This is the scouting intelligence component. Predicting market value and finding players whose actual value is significantly below their predicted value — these are the hidden gems clubs should be targeting. This is directly monetisable football analytics work.</div></div>
+      <div class="story-box"><div class="story-lbl">The scouting insight</div><div class="story-txt">Every scout wants to find the Mané before he was Mané. The player in the second tier of a smaller league who has the attributes of a top-5 league player but hasn't been discovered yet. This model tries to identify exactly those players using data rather than eyeballs alone.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 7 -->
+<div class="day-card" id="card-day-7">
+  <div class="day-header" onclick="tog(7)">
+    <span class="day-num">Day 07</span>
+    <div class="day-icon" id="icon-day-7">7</div>
+    <div class="day-info">
+      <div class="day-title-text">Interactive Dashboard</div>
+      <div class="day-subtitle-text">Build Streamlit app — migration map, player explorer, undervalued finder</div>
+    </div>
+    <span class="day-date-text" id="date-day-7">—</span>
+  </div>
+  <div class="day-body" id="body-day-7">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(7,'tasks')">Tasks</button>
+    </div>
+    <div class="tab-panel active" id="tab-7-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t7-1" onclick="tick(7,1)"><div class="task-checkbox"></div><div class="task-text">Built dashboard/app.py with dark theme</div><span class="task-tag">streamlit</span></li>
+        <li class="task-item" id="t7-2" onclick="tick(7,2)"><div class="task-checkbox"></div><div class="task-text">Tab 1: Migration overview — KPIs, nation bar chart, choropleth map</div><span class="task-tag">streamlit</span></li>
+        <li class="task-item" id="t7-3" onclick="tick(7,3)"><div class="task-checkbox"></div><div class="task-text">Tab 2: Player explorer — filter by nation, position, league, age</div><span class="task-tag">streamlit</span></li>
+        <li class="task-item" id="t7-4" onclick="tick(7,4)"><div class="task-checkbox"></div><div class="task-text">Tab 3: Undervalued talent — top 10 hidden gems with profiles</div><span class="task-tag">streamlit</span></li>
+        <li class="task-item" id="t7-5" onclick="tick(7,5)"><div class="task-checkbox"></div><div class="task-text">Tested locally</div><span class="task-tag">testing</span></li>
+        <li class="task-item" id="t7-6" onclick="tick(7,6)"><div class="task-checkbox"></div><div class="task-text">Deployed to Streamlit Cloud</div><span class="task-tag">deployment</span></li>
+        <li class="task-item" id="t7-7" onclick="tick(7,7)"><div class="task-checkbox"></div><div class="task-text">Added live link to README</div><span class="task-tag">readme</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(7)">&#10003; Mark Day 7 Complete</button>
+        <button class="undo-day-btn" onclick="ud(7)">&#8635; Undo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 8 -->
+<div class="day-card" id="card-day-8">
+  <div class="day-header" onclick="tog(8)">
+    <span class="day-num">Day 08</span>
+    <div class="day-icon" id="icon-day-8">8</div>
+    <div class="day-info">
+      <div class="day-title-text">README &amp; Data Journalism Narrative</div>
+      <div class="day-subtitle-text">Write the story — professional README with full analytical narrative</div>
+    </div>
+    <span class="day-date-text" id="date-day-8">—</span>
+  </div>
+  <div class="day-body" id="body-day-8">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(8,'tasks')">Tasks</button>
+    </div>
+    <div class="tab-panel active" id="tab-8-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t8-1" onclick="tick(8,1)"><div class="task-checkbox"></div><div class="task-text">Write README with full data journalism narrative</div><span class="task-tag">readme</span></li>
+        <li class="task-item" id="t8-2" onclick="tick(8,2)"><div class="task-checkbox"></div><div class="task-text">Embed choropleth map and key charts in README</div><span class="task-tag">readme</span></li>
+        <li class="task-item" id="t8-3" onclick="tick(8,3)"><div class="task-checkbox"></div><div class="task-text">Write executive summary PDF</div><span class="task-tag">report</span></li>
+        <li class="task-item" id="t8-4" onclick="tick(8,4)"><div class="task-checkbox"></div><div class="task-text">Write 4 CV bullet points for this project</div><span class="task-tag">cv</span></li>
+        <li class="task-item" id="t8-5" onclick="tick(8,5)"><div class="task-checkbox"></div><div class="task-text">Write STAR interview answer</div><span class="task-tag">interview</span></li>
+        <li class="task-item" id="t8-6" onclick="tick(8,6)"><div class="task-checkbox"></div><div class="task-text">Committed and pushed</div><span class="task-tag">git</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(8)">&#10003; Mark Day 8 Complete</button>
+        <button class="undo-day-btn" onclick="ud(8)">&#8635; Undo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 9 -->
+<div class="day-card" id="card-day-9">
+  <div class="day-header" onclick="tog(9)">
+    <span class="day-num">Day 09</span>
+    <div class="day-icon" id="icon-day-9">9</div>
+    <div class="day-info">
+      <div class="day-title-text">LinkedIn Content Series</div>
+      <div class="day-subtitle-text">Write 3-post LinkedIn series designed to go viral in football analytics community</div>
+    </div>
+    <span class="day-date-text" id="date-day-9">—</span>
+  </div>
+  <div class="day-body" id="body-day-9">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(9,'tasks')">Tasks</button>
+    </div>
+    <div class="tab-panel active" id="tab-9-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t9-1" onclick="tick(9,1)"><div class="task-checkbox"></div><div class="task-text">Post 1: The headline stat — hook post with choropleth map</div><span class="task-tag">linkedin</span></li>
+        <li class="task-item" id="t9-2" onclick="tick(9,2)"><div class="task-checkbox"></div><div class="task-text">Post 2: The hidden gems — undervalued player findings</div><span class="task-tag">linkedin</span></li>
+        <li class="task-item" id="t9-3" onclick="tick(9,3)"><div class="task-checkbox"></div><div class="task-text">Post 3: The full project launch — dashboard link and methodology</div><span class="task-tag">linkedin</span></li>
+        <li class="task-item" id="t9-4" onclick="tick(9,4)"><div class="task-checkbox"></div><div class="task-text">Update CV with Project 3 bullet points</div><span class="task-tag">cv</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(9)">&#10003; Mark Day 9 Complete</button>
+        <button class="undo-day-btn" onclick="ud(9)">&#8635; Undo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 10 -->
+<div class="day-card" id="card-day-10">
+  <div class="day-header" onclick="tog(10)">
+    <span class="day-num">Day 10</span>
+    <div class="day-icon" id="icon-day-10">10</div>
+    <div class="day-info">
+      <div class="day-title-text">Final Polish — Flagship Ready</div>
+      <div class="day-subtitle-text">Clean notebooks, final README, publish LinkedIn series, pin on GitHub</div>
+    </div>
+    <span class="day-date-text" id="date-day-10">—</span>
+  </div>
+  <div class="day-body" id="body-day-10">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="st(10,'tasks')">Tasks</button>
+    </div>
+    <div class="tab-panel active" id="tab-10-tasks">
+      <ul class="tasks-list">
+        <li class="task-item" id="t10-1" onclick="tick(10,1)"><div class="task-checkbox"></div><div class="task-text">Restart and run all notebooks — confirm zero errors</div><span class="task-tag">polish</span></li>
+        <li class="task-item" id="t10-2" onclick="tick(10,2)"><div class="task-checkbox"></div><div class="task-text">All charts saved at 300 DPI</div><span class="task-tag">polish</span></li>
+        <li class="task-item" id="t10-3" onclick="tick(10,3)"><div class="task-checkbox"></div><div class="task-text">Final README review and spell check</div><span class="task-tag">readme</span></li>
+        <li class="task-item" id="t10-4" onclick="tick(10,4)"><div class="task-checkbox"></div><div class="task-text">Pin repository on GitHub profile — now 3 projects pinned</div><span class="task-tag">github</span></li>
+        <li class="task-item" id="t10-5" onclick="tick(10,5)"><div class="task-checkbox"></div><div class="task-text">Publish LinkedIn post 1 — the hook</div><span class="task-tag">linkedin</span></li>
+        <li class="task-item" id="t10-6" onclick="tick(10,6)"><div class="task-checkbox"></div><div class="task-text">Update CV with all three projects — download new version</div><span class="task-tag">cv</span></li>
+      </ul>
+      <div class="btn-row">
+        <button class="complete-day-btn" onclick="mc(10)">&#10003; Mark Day 10 Complete</button>
+        <button class="undo-day-btn" onclick="ud(10)">&#8635; Undo</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-left">John Ayomide &middot; African Football Migration &middot; Started June 2026</div>
+  <a class="github-link" href="https://github.com/John-Ayomide/african-football-migration" target="_blank">github.com/John-Ayomide/african-football-migration</a>
+</div>
+
+</div>
+
+<script>
+var STORE='africa_journal_v1';
+function ls(){try{return JSON.parse(localStorage.getItem(STORE))||{};}catch(e){return {};}}
+function ss(s){try{localStorage.setItem(STORE,JSON.stringify(s));}catch(e){}}
+
+function applyState(){
+  var s=ls();
+  var cd=0,dt=0;
+  for(var d=1;d<=10;d++){
+    var done=s['day_'+d]===true;
+    var card=document.getElementById('card-day-'+d);
+    var icon=document.getElementById('icon-day-'+d);
+    var date=document.getElementById('date-day-'+d);
+    var prev=d===1?true:s['day_'+(d-1)]===true;
+    if(done){card.className='day-card completed';icon.innerHTML='&#10003;';date.textContent=s['day_'+d+'_date']||'Complete';cd++;}
+    else if(prev){card.className='day-card active';icon.innerHTML='&#9654;';date.textContent='Up next';}
+    else{card.className='day-card locked';icon.innerHTML=d;date.textContent='Locked';}
+    document.querySelectorAll('[id^="t'+d+'-"]').forEach(function(el){
+      var k='task_'+d+'_'+el.id.split('-')[1];
+      var chk=el.querySelector('.task-checkbox');
+      if(s[k]){el.classList.add('done');chk.innerHTML='&#10003;';dt++;}
+      else{el.classList.remove('done');chk.innerHTML='';}
+    });
+  }
+  document.getElementById('stat-days').textContent=cd;
+  document.getElementById('stat-tasks').textContent=dt;
+  var pct=Math.round((cd/10)*100);
+  document.getElementById('progress-pct').textContent=pct+'%';
+  document.getElementById('progress-fill').style.width=pct+'%';
+}
+
+function tick(d,n){var s=ls();var k='task_'+d+'_'+n;s[k]=!s[k];ss(s);applyState();}
+
+function mc(d){
+  var s=ls();s['day_'+d]=true;
+  var now=new Date();s['day_'+d+'_date']=now.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+  document.querySelectorAll('[id^="t'+d+'-"]').forEach(function(el){s['task_'+d+'_'+el.id.split('-')[1]]=true;});
+  ss(s);applyState();
+  var nb=document.getElementById('body-day-'+(d+1));if(nb)nb.classList.add('open');
+  toast('Day '+d+' complete! '+(d<10?'Day '+(d+1)+' unlocked':'Project complete!')+'  ✓');
+}
+
+function ud(d){var s=ls();delete s['day_'+d];delete s['day_'+d+'_date'];ss(s);applyState();toast('Day '+d+' marked incomplete');}
+
+function tog(d){
+  var body=document.getElementById('body-day-'+d);
+  var card=document.getElementById('card-day-'+d);
+  if(card.classList.contains('locked'))return;
+  if(body)body.classList.toggle('open');
+}
+
+function st(d,tab){
+  var body=document.getElementById('body-day-'+d);if(!body)return;
+  body.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});
+  body.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  var p=document.getElementById('tab-'+d+'-'+tab);if(p)p.classList.add('active');
+  body.querySelectorAll('.tab-btn').forEach(function(b){
+    if(b.getAttribute('onclick')&&b.getAttribute('onclick').indexOf("'"+tab+"'")>-1)b.classList.add('active');
+  });
+}
+
+function toast(msg){
+  var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},3000);
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  applyState();
+  for(var d=1;d<=10;d++){
+    var card=document.getElementById('card-day-'+d);
+    if(card&&card.classList.contains('active')){
+      var body=document.getElementById('body-day-'+d);
+      if(body)body.classList.add('open');break;
+    }
+  }
+});
+</script>
+</body>
+</html>
