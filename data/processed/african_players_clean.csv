@@ -1,362 +1,326 @@
-player,nation_code,position,age,club,league,birth_year,goals,assists,matches_played,minutes,nationality
-Thomas Partey,GHA,"MF,DF",31,Arsenal,ENG-Premier League,1993,4,2,35,2797,Ghana
-Antoine Semenyo,GHA,MF,24,Bournemouth,ENG-Premier League,2000,11,5,37,3203,Ghana
-Dango Ouattara,BFA,"MF,FW",22,Bournemouth,ENG-Premier League,2002,7,4,32,2005,Burkina Faso
-Bryan Mbeumo,CMR,"MF,FW",24,Brentford,ENG-Premier League,1999,20,7,38,3414,Cameroon
-Frank Onyeka,NGA,MF,26,Brentford,ENG-Premier League,1998,0,0,2,25,Nigeria
-Yoane Wissa,COD,FW,27,Brentford,ENG-Premier League,1996,19,4,35,2919,DR Congo
-Carlos Baleba,CMR,MF,20,Brighton,ENG-Premier League,2004,3,1,34,2661,Cameroon
-Simon Adingra,CIV,MF,22,Brighton,ENG-Premier League,2002,2,2,29,1097,Ivory Coast
-Tariq Lamptey,GHA,"DF,MF",23,Brighton,ENG-Premier League,2000,2,2,15,860,Ghana
-Nicolas Jackson,SEN,FW,23,Chelsea,ENG-Premier League,2001,10,5,30,2220,Senegal
-Chadi Riad,MAR,DF,21,Crystal Palace,ENG-Premier League,2003,0,0,1,90,Morocco
-Cheick Doucouré,MLI,MF,24,Crystal Palace,ENG-Premier League,2000,0,0,13,452,Mali
-Ismaila Sarr,SEN,MF,26,Crystal Palace,ENG-Premier League,1998,8,6,38,2711,Senegal
-Jeffrey Schlupp,GHA,"DF,FW",31,Crystal Palace,ENG-Premier League,1992,0,0,12,103,Ghana
-Jordan Ayew,GHA,"FW,MF",32,Crystal Palace,ENG-Premier League,1991,0,0,1,21,Ghana
-Abdoulaye Doucouré,MLI,MF,31,Everton,ENG-Premier League,1993,3,2,33,2564,Mali
-Beto,GNB,FW,26,Everton,ENG-Premier League,1998,8,0,30,1534,Guinea-Bissau
-Idrissa Gana Gueye,SEN,MF,34,Everton,ENG-Premier League,1989,0,3,37,3063,Senegal
-Iliman Ndiaye,SEN,"MF,FW",24,Everton,ENG-Premier League,2000,9,0,33,2430,Senegal
-Alex Iwobi,NGA,MF,28,Fulham,ENG-Premier League,1996,9,6,38,2981,Nigeria
-Calvin Bassey,NGA,DF,24,Fulham,ENG-Premier League,1999,1,0,35,3074,Nigeria
-Issa Diop,MAR,DF,27,Fulham,ENG-Premier League,1997,0,0,21,1339,Morocco
-Martial Godo,CIV,"FW,MF",21,Fulham,ENG-Premier League,2003,0,0,2,24,Ivory Coast
-Axel Tuanzebe,COD,DF,26,Ipswich Town,ENG-Premier League,1997,0,1,22,1710,DR Congo
-Sam Morsy,EGY,MF,32,Ipswich Town,ENG-Premier League,1991,1,1,33,2751,Egypt
-Abdul Fatawu Issahaku,GHA,"MF,FW",20,Leicester City,ENG-Premier League,2004,0,2,11,579,Ghana
-Bilal El Khannouss,MAR,MF,20,Leicester City,ENG-Premier League,2004,2,3,32,2182,Morocco
-Jordan Ayew,GHA,MF,32,Leicester City,ENG-Premier League,1991,5,0,30,1638,Ghana
-Patson Daka,ZAM,"MF,FW",25,Leicester City,ENG-Premier League,1998,1,0,23,736,ZAM
-Wilfred Ndidi,NGA,MF,27,Leicester City,ENG-Premier League,1996,0,5,28,2324,Nigeria
-Woyo Coulibaly,MLI,DF,25,Leicester City,ENG-Premier League,1999,0,0,4,109,Mali
-Mohamed Salah,EGY,MF,32,Liverpool,ENG-Premier League,1992,29,18,38,3371,Egypt
-Omar Marmoush,EGY,"MF,FW",25,Manchester City,ENG-Premier League,1999,7,0,16,1175,Egypt
-Amad Diallo,CIV,"MF,FW",22,Manchester Utd,ENG-Premier League,2002,8,6,26,1901,Ivory Coast
-André Onana,CMR,GK,28,Manchester Utd,ENG-Premier League,1996,0,0,34,3060,Cameroon
-Noussair Mazraoui,MAR,"DF,MF",26,Manchester Utd,ENG-Premier League,1997,0,1,37,2838,Morocco
-Ibrahim Sangaré,CIV,MF,26,Nottingham Forest,ENG-Premier League,1997,0,1,13,590,Ivory Coast
-Ola Aina,NGA,DF,27,Nottingham Forest,ENG-Premier League,1996,2,1,35,2995,Nigeria
-Taiwo Awoniyi,NGA,FW,26,Nottingham Forest,ENG-Premier League,1997,1,0,26,416,Nigeria
-Willy Boly,CIV,DF,33,Nottingham Forest,ENG-Premier League,1991,0,0,6,150,Ivory Coast
-Joe Aribo,NGA,MF,28,Southampton,ENG-Premier League,1996,3,0,32,2013,Nigeria
-Kamaldeen Sulemana,GHA,"FW,MF",22,Southampton,ENG-Premier League,2002,1,1,26,1402,Ghana
-Maxwel Cornet,CIV,MF,27,Southampton,ENG-Premier League,1996,0,0,2,72,Ivory Coast
-Paul Onuachu,NGA,FW,30,Southampton,ENG-Premier League,1994,4,1,25,1050,Nigeria
-Pape Matar Sarr,SEN,MF,21,Tottenham Hotspur,ENG-Premier League,2002,3,2,36,1913,Senegal
-Yves Bissouma,MLI,MF,27,Tottenham Hotspur,ENG-Premier League,1996,2,0,28,1408,Mali
-Aaron Wan-Bissaka,COD,"DF,MF",26,West Ham United,ENG-Premier League,1997,2,5,36,3154,DR Congo
-Mohammed Kudus,GHA,"MF,FW",23,West Ham United,ENG-Premier League,2000,5,3,32,2590,Ghana
-Boubacar Traoré,MLI,MF,22,Wolves,ENG-Premier League,2001,0,0,1,1,Mali
-Emmanuel Agbadou,CIV,DF,27,Wolves,ENG-Premier League,1997,1,0,16,1410,Ivory Coast
-Mario Lemina,GAB,"MF,DF",30,Wolves,ENG-Premier League,1993,1,3,17,1364,Gabon
-Marshall Munetsi,ZIM,"MF,FW",28,Wolves,ENG-Premier League,1996,2,1,14,1078,Zimbabwe
-Nasser Djiga,BFA,DF,21,Wolves,ENG-Premier League,2002,0,0,5,66,Burkina Faso
-Rayan Aït-Nouri,ALG,"MF,DF",23,Wolves,ENG-Premier League,2001,4,7,37,3109,Algeria
-Abde Rebbach,ALG,"MF,FW",25,Alavés,ESP-La Liga,1998,0,0,8,385,Algeria
-Abdel Abqar,MAR,DF,25,Alavés,ESP-La Liga,1999,0,1,29,2463,Morocco
-Moussa Diarra,MLI,DF,23,Alavés,ESP-La Liga,2000,0,0,26,1866,Mali
-Iñaki Williams,GHA,"MF,FW",30,Athletic Club,ESP-La Liga,1994,6,8,35,2652,Ghana
-Maroan Sannadi,MAR,FW,23,Athletic Club,ESP-La Liga,2001,1,1,16,754,Morocco
-Álvaro djaló,GNB,"MF,FW",24,Athletic Club,ESP-La Liga,1999,1,0,17,659,Guinea-Bissau
-Reinildo Mandava,MOZ,"DF,MF",30,Atlético Madrid,ESP-La Liga,1994,0,0,19,941,Mozambique
-Ilaix Moriba,GUI,MF,21,Celta Vigo,ESP-La Liga,2003,1,1,33,2132,Guinea
-Jonathan Bamba,CIV,"MF,FW",28,Celta Vigo,ESP-La Liga,1996,0,1,12,811,Ivory Coast
-Joseph Aidoo,GHA,DF,28,Celta Vigo,ESP-La Liga,1995,0,0,1,2,Ghana
-Omar El Hilali,MAR,DF,20,Espanyol,ESP-La Liga,2003,0,2,36,3153,Morocco
-Walid Cheddira,MAR,FW,26,Espanyol,ESP-La Liga,1998,1,1,22,640,Morocco
-Allan Nyom,CMR,"MF,DF",36,Getafe,ESP-La Liga,1988,1,2,20,887,Cameroon
-Christantus Uche,NGA,"FW,MF",21,Getafe,ESP-La Liga,2003,4,6,33,2486,Nigeria
-Djené,TOG,"DF,MF",32,Getafe,ESP-La Liga,1991,0,0,31,2548,Togo
-Ismael Bekhoucha,MAR,DF,19,Getafe,ESP-La Liga,2004,0,0,5,69,Morocco
-Aboubacar Bassinga,BFA,MF,19,Las Palmas,ESP-La Liga,2005,0,0,1,4,Burkina Faso
-Duk,CPV,MF,24,Leganés,ESP-La Liga,2000,0,0,10,179,CPV
-Munir El Haddadi,MAR,"MF,FW",28,Leganés,ESP-La Liga,1995,4,0,25,862,Morocco
-Seydouba Cissé,GUI,MF,23,Leganés,ESP-La Liga,2001,3,1,34,2435,Guinea
-Sébastien Haller,CIV,FW,30,Leganés,ESP-La Liga,1994,0,0,8,404,Ivory Coast
-Yan Diomandé,CIV,MF,17,Leganés,ESP-La Liga,2006,2,1,10,545,Ivory Coast
-Yvan Neyou,CMR,MF,27,Leganés,ESP-La Liga,1997,1,1,30,2312,Cameroon
-Enzo Boyomo,CMR,DF,22,Osasuna,ESP-La Liga,2001,2,0,34,2987,Cameroon
-Abdul Mumin,GHA,DF,26,Rayo Vallecano,ESP-La Liga,1998,2,1,24,2017,Ghana
-Etienne Eto'o,CMR,FW,21,Rayo Vallecano,ESP-La Liga,2002,0,0,2,40,Cameroon
-Pathé Ciss,SEN,"MF,DF",30,Rayo Vallecano,ESP-La Liga,1994,4,1,33,2140,Senegal
-Randy Nteka,ANG,FW,26,Rayo Vallecano,ESP-La Liga,1997,3,0,24,1129,Angola
-Abde Ezzalzouli,MAR,MF,22,Real Betis,ESP-La Liga,2001,2,2,32,1984,Morocco
-Assane Diao,SEN,FW,18,Real Betis,ESP-La Liga,2005,1,2,10,277,Senegal
-Cédric Bakambu,COD,FW,33,Real Betis,ESP-La Liga,1991,2,2,25,710,DR Congo
-Nobel Mendy,SEN,DF,19,Real Betis,ESP-La Liga,2004,0,0,2,108,Senegal
-Youssouf Sabaly,SEN,DF,31,Real Betis,ESP-La Liga,1993,0,1,22,1581,Senegal
-Brahim Díaz,MAR,"MF,FW",24,Real Madrid,ESP-La Liga,1999,4,2,31,1385,Morocco
-Hamari Traoré,MLI,DF,32,Real Sociedad,ESP-La Liga,1992,0,1,11,700,Mali
-Nayef Aguerd,MAR,DF,28,Real Sociedad,ESP-La Liga,1996,0,0,21,1760,Morocco
-Umar Sadiq,NGA,FW,27,Real Sociedad,ESP-La Liga,1997,0,0,7,227,Nigeria
-Akor Adams,NGA,FW,24,Sevilla,ESP-La Liga,2000,0,0,4,134,Nigeria
-Chidera Ejuke,NGA,"MF,FW",26,Sevilla,ESP-La Liga,1998,2,1,25,966,Nigeria
-Kelechi Iheanacho,NGA,FW,27,Sevilla,ESP-La Liga,1996,0,0,9,400,Nigeria
-Mouctar Diakhaby,GUI,DF,27,Valencia,ESP-La Liga,1996,2,0,13,653,Guinea
-Umar Sadiq,NGA,FW,27,Valencia,ESP-La Liga,1997,5,0,16,825,Nigeria
-Abdulai Juma Bah,SLE,DF,18,Valladolid,ESP-La Liga,2006,0,0,12,864,Sierra Leone
-Adam Aznou,MAR,"DF,MF",18,Valladolid,ESP-La Liga,2006,0,0,13,876,Morocco
-Amath,SEN,"FW,MF",28,Valladolid,ESP-La Liga,1996,0,1,13,375,Senegal
-Anuar,MAR,"MF,FW",29,Valladolid,ESP-La Liga,1995,2,0,26,1720,Morocco
-Enzo Boyomo,CMR,DF,22,Valladolid,ESP-La Liga,2001,0,0,3,270,Cameroon
-Ibrahim Alani,NGA,MF,18,Valladolid,ESP-La Liga,2006,0,0,3,160,Nigeria
-Joseph Aidoo,GHA,DF,28,Valladolid,ESP-La Liga,1995,0,0,8,583,Ghana
-Mamadou Sylla,SEN,"FW,MF",30,Valladolid,ESP-La Liga,1994,5,1,29,1583,Senegal
-Selim Amallah,MAR,MF,27,Valladolid,ESP-La Liga,1996,3,1,24,1376,Morocco
-Eric Bailly,CIV,DF,30,Villarreal,ESP-La Liga,1994,0,0,12,617,Ivory Coast
-Ilias Akhomach,MAR,MF,20,Villarreal,ESP-La Liga,2004,1,0,11,584,Morocco
-Karl Etta Eyong,CMR,FW,20,Villarreal,ESP-La Liga,2003,1,0,4,37,Cameroon
-Logan Costa,CPV,DF,23,Villarreal,ESP-La Liga,2001,2,1,32,2587,CPV
-Nicolas Pépé,CIV,"FW,MF",29,Villarreal,ESP-La Liga,1995,3,6,28,1500,Ivory Coast
-Pape Gueye,SEN,"MF,FW",25,Villarreal,ESP-La Liga,1999,4,0,34,2224,Senegal
-Abdoulaye Bamba,CIV,DF,34,Angers,FRA-Ligue 1,1990,0,0,19,1510,Ivory Coast
-Bamba Dieng,SEN,FW,24,Angers,FRA-Ligue 1,2000,3,0,18,532,Senegal
-Cédric Hountondji,BEN,DF,30,Angers,FRA-Ligue 1,1994,0,0,3,270,Benin
-Farid El Melali,ALG,"MF,FW",27,Angers,FRA-Ligue 1,1997,2,3,32,1893,Algeria
-Florent Hanin,ALG,DF,34,Angers,FRA-Ligue 1,1990,1,2,33,2672,Algeria
-Haris Belkebla,ALG,MF,30,Angers,FRA-Ligue 1,1994,0,1,22,1792,Algeria
-Himad Abdelli,ALG,MF,24,Angers,FRA-Ligue 1,1999,6,1,32,2842,Algeria
-Ibrahima Niane,SEN,FW,25,Angers,FRA-Ligue 1,1999,3,1,24,943,Senegal
-Jacques Ekomie,GAB,"DF,MF",20,Angers,FRA-Ligue 1,2003,0,0,18,697,Gabon
-Jean-Eudes Aholou,CIV,MF,30,Angers,FRA-Ligue 1,1994,2,0,26,1959,Ivory Coast
-Jim Allevinah,GAB,MF,29,Angers,FRA-Ligue 1,1995,1,3,28,1750,Gabon
-Ousmane Camara,MLI,DF,21,Angers,FRA-Ligue 1,2003,0,0,3,252,Mali
-Prosper Peter,NGA,FW,16,Angers,FRA-Ligue 1,2007,0,0,2,27,Nigeria
-Yahia Fofana,CIV,GK,23,Angers,FRA-Ligue 1,2000,0,0,33,2970,Ivory Coast
-Zinedine Ferhat,ALG,MF,31,Angers,FRA-Ligue 1,1993,2,0,24,849,Algeria
-Aristide Zossou,CIV,MF,19,Auxerre,FRA-Ligue 1,2005,0,0,3,16,Ivory Coast
-Assane Dioussé,SEN,MF,26,Auxerre,FRA-Ligue 1,1997,0,0,17,663,Senegal
-Clément Akpa,CIV,DF,22,Auxerre,FRA-Ligue 1,2001,0,1,31,2486,Ivory Coast
-Elisha Owusu,GHA,MF,26,Auxerre,FRA-Ligue 1,1997,1,3,28,2344,Ghana
-Gabriel Osho,NGA,DF,25,Auxerre,FRA-Ligue 1,1998,1,0,20,1654,Nigeria
-Gideon Mensah,GHA,"DF,MF",26,Auxerre,FRA-Ligue 1,1998,0,1,29,2280,Ghana
-Hamed Junior Traorè,CIV,MF,24,Auxerre,FRA-Ligue 1,2000,10,2,26,2093,Ivory Coast
-Lassine Sinayoko,MLI,"FW,MF",24,Auxerre,FRA-Ligue 1,1999,5,8,34,2299,Mali
-Lasso Coulibaly,CIV,MF,21,Auxerre,FRA-Ligue 1,2002,1,0,3,45,Ivory Coast
-Sinaly Diomande,CIV,DF,23,Auxerre,FRA-Ligue 1,2001,3,2,23,1945,Ivory Coast
-Abdallah Sima,SEN,"FW,MF",23,Brest,FRA-Ligue 1,2001,7,2,27,1238,Senegal
-Abdoulaye Ndiaye,SEN,DF,22,Brest,FRA-Ligue 1,2002,1,0,22,1707,Senegal
-Hamidou Makalou,MLI,MF,18,Brest,FRA-Ligue 1,2006,0,0,4,32,Mali
-Ibrahim Salah,MAR,"MF,FW",22,Brest,FRA-Ligue 1,2001,1,1,12,358,Morocco
-Kamory Doumbia,MLI,"MF,FW",21,Brest,FRA-Ligue 1,2003,3,2,30,1322,Mali
-Luck Zogbé,CIV,DF,19,Brest,FRA-Ligue 1,2005,0,0,13,638,Ivory Coast
-Mama Samba Baldé,GNB,"FW,MF",28,Brest,FRA-Ligue 1,1995,2,3,27,1149,Guinea-Bissau
-Massadio Haïdara,MLI,DF,31,Brest,FRA-Ligue 1,1992,0,0,22,1678,Mali
-Sérigné Diop,SEN,FW,19,Brest,FRA-Ligue 1,2005,0,0,2,4,Senegal
-Abdoulaye Touré,GUI,MF,30,Le Havre,FRA-Ligue 1,1994,10,1,28,2324,Guinea
-André Ayew,GHA,FW,34,Le Havre,FRA-Ligue 1,1989,4,1,27,1453,Ghana
-Arouna Sangante,SEN,DF,22,Le Havre,FRA-Ligue 1,2002,3,0,16,1244,Senegal
-Christopher Opéri,CIV,"MF,DF",27,Le Havre,FRA-Ligue 1,1997,0,2,13,1169,Ivory Coast
-Fodé Ballo-Touré,SEN,"DF,MF",27,Le Havre,FRA-Ligue 1,1997,0,0,10,589,Senegal
-Issa Soumaré,SEN,"MF,FW",23,Le Havre,FRA-Ligue 1,2000,5,4,29,1902,Senegal
-Kandet Diawara,GUI,MF,24,Le Havre,FRA-Ligue 1,2000,0,0,1,4,Guinea
-Koka,EGY,FW,31,Le Havre,FRA-Ligue 1,1993,3,1,16,851,Egypt
-Oussama Targhalline,MAR,MF,22,Le Havre,FRA-Ligue 1,2002,0,0,14,990,Morocco
-Rassoul Ndiaye,SEN,MF,22,Le Havre,FRA-Ligue 1,2001,1,0,27,1061,Senegal
-Yanis Zouaoui,ALG,"DF,MF",26,Le Havre,FRA-Ligue 1,1998,0,2,17,976,Algeria
-Yassine Kechta,MAR,"MF,FW",22,Le Havre,FRA-Ligue 1,2002,2,0,31,2096,Morocco
-Abdulai Juma Bah,SLE,DF,18,Lens,FRA-Ligue 1,2006,0,0,10,686,Sierra Leone
-Anass Zaroury,MAR,"MF,FW",23,Lens,FRA-Ligue 1,2000,2,2,28,1405,Morocco
-Hamzat Ojediran,NGA,MF,20,Lens,FRA-Ligue 1,2003,1,0,17,416,Nigeria
-Hervé Koffi,BFA,GK,27,Lens,FRA-Ligue 1,1996,0,0,5,450,Burkina Faso
-M'Bala Nzola,ANG,FW,27,Lens,FRA-Ligue 1,1996,6,1,21,1460,Angola
-Nampalys Mendy,SEN,MF,32,Lens,FRA-Ligue 1,1992,0,1,10,588,Senegal
-Neil El Aynaoui,MAR,MF,23,Lens,FRA-Ligue 1,2001,8,1,24,1588,Morocco
-Ayyoub Bouaddi,MAR,MF,16,Lille,FRA-Ligue 1,2007,0,1,24,1151,Morocco
-Aïssa Mandi,ALG,DF,32,Lille,FRA-Ligue 1,1991,0,0,24,1733,Algeria
-Mohamed Lamine Bayo,GUI,FW,26,Lille,FRA-Ligue 1,1998,2,1,12,309,Guinea
-Nabil Bentaleb,ALG,MF,29,Lille,FRA-Ligue 1,1994,1,0,10,329,Algeria
-Ngal'Ayel Mukau,COD,MF,19,Lille,FRA-Ligue 1,2004,0,1,22,1190,DR Congo
-Osame Sahraoui,MAR,MF,23,Lille,FRA-Ligue 1,2001,3,3,30,1293,Morocco
-Clinton Mata,ANG,DF,31,Lyon,FRA-Ligue 1,1992,0,4,29,2370,Angola
-Ernest Nuamah,GHA,"MF,FW",20,Lyon,FRA-Ligue 1,2003,3,1,23,1052,Ghana
-Gift Orban,NGA,FW,22,Lyon,FRA-Ligue 1,2002,2,0,3,186,Nigeria
-Mama Samba Baldé,GNB,"FW,MF",28,Lyon,FRA-Ligue 1,1995,0,0,2,33,Guinea-Bissau
-Moussa Niakhate,SEN,DF,28,Lyon,FRA-Ligue 1,1996,0,0,31,2726,Senegal
-Paul Akouokou,CIV,MF,26,Lyon,FRA-Ligue 1,1997,0,0,2,19,Ivory Coast
-Saïd Benrahma,ALG,"FW,MF",28,Lyon,FRA-Ligue 1,1995,1,3,13,735,Algeria
-Warmed Omari,COM,DF,24,Lyon,FRA-Ligue 1,2000,0,0,1,8,COM
-Wilfried Zaha,CIV,FW,31,Lyon,FRA-Ligue 1,1992,0,0,4,73,Ivory Coast
-Amine Gouiri,ALG,FW,24,Marseille,FRA-Ligue 1,2000,10,3,14,1048,Algeria
-Amine Harit,MAR,MF,27,Marseille,FRA-Ligue 1,1997,2,4,13,519,Morocco
-Bamo Meïté,CIV,DF,22,Marseille,FRA-Ligue 1,2001,0,0,3,26,Ivory Coast
-Bilal Nadir,MAR,MF,20,Marseille,FRA-Ligue 1,2003,1,0,15,383,Morocco
-Elye Wahi,CIV,FW,21,Marseille,FRA-Ligue 1,2003,3,1,13,574,Ivory Coast
-Faris Pemi Moumbagna,CMR,FW,24,Marseille,FRA-Ligue 1,2000,0,0,1,8,Cameroon
-Ismaël Bennacer,ALG,MF,26,Marseille,FRA-Ligue 1,1997,0,2,12,646,Algeria
-Eliesse Ben Seghir,MAR,MF,19,Monaco,FRA-Ligue 1,2005,6,3,33,1750,Morocco
-George Ilenikhena,NGA,FW,17,Monaco,FRA-Ligue 1,2006,3,2,23,717,Nigeria
-Ismail Jakobs,SEN,DF,24,Monaco,FRA-Ligue 1,1999,0,0,2,180,Senegal
-Krépin Diatta,SEN,"DF,MF",25,Monaco,FRA-Ligue 1,1999,0,0,19,508,Senegal
-Lamine Camara,SEN,MF,20,Monaco,FRA-Ligue 1,2004,2,7,29,2054,Senegal
-Mohammed Salisu,GHA,DF,25,Monaco,FRA-Ligue 1,1999,1,0,15,1023,Ghana
-Wilfried Singo,CIV,DF,23,Monaco,FRA-Ligue 1,2000,1,2,27,2096,Ivory Coast
-Akor Adams,NGA,FW,24,Montpellier,FRA-Ligue 1,2000,3,1,15,1075,Nigeria
-Andy Delort,ALG,FW,32,Montpellier,FRA-Ligue 1,1991,0,0,9,607,Algeria
-Bamo Meïté,CIV,DF,22,Montpellier,FRA-Ligue 1,2001,0,0,7,424,Ivory Coast
-Birama Touré,MLI,"MF,DF",32,Montpellier,FRA-Ligue 1,1992,0,0,8,300,Mali
-Boubakar Kouyaté,MLI,DF,27,Montpellier,FRA-Ligue 1,1997,0,0,11,756,Mali
-Dimitry Bertaud,COD,GK,26,Montpellier,FRA-Ligue 1,1998,0,0,4,360,DR Congo
-Enzo Tchato,CMR,"DF,MF",21,Montpellier,FRA-Ligue 1,2002,0,0,27,1899,Cameroon
-Falaye Sacko,MLI,DF,29,Montpellier,FRA-Ligue 1,1995,0,1,16,1233,Mali
-Issiaga Sylla,GUI,"DF,MF",30,Montpellier,FRA-Ligue 1,1994,1,0,19,1156,Guinea
-Modibo Sagnan,MLI,DF,25,Montpellier,FRA-Ligue 1,1999,2,0,27,2141,Mali
-Othmane Maamma,MAR,MF,18,Montpellier,FRA-Ligue 1,2005,1,1,12,361,Morocco
-Wahbi Khazri,TUN,"FW,MF",33,Montpellier,FRA-Ligue 1,1991,1,1,30,1118,Tunisia
-Wilfried Ndollo,CMR,DF,19,Montpellier,FRA-Ligue 1,2005,0,0,8,401,Cameroon
-Alban Lafont,CIV,GK,25,Nantes,FRA-Ligue 1,1999,0,0,12,1080,Ivory Coast
-Ignatius Ganago,CMR,MF,25,Nantes,FRA-Ligue 1,1999,0,0,11,241,Cameroon
-Jean-Charles Castelletto,CMR,"DF,MF",29,Nantes,FRA-Ligue 1,1995,0,0,30,2620,Cameroon
-Jean-Philippe Gbamin,CIV,MF,28,Nantes,FRA-Ligue 1,1995,0,0,14,216,Ivory Coast
-Meschak Elia,COD,FW,26,Nantes,FRA-Ligue 1,1997,1,0,8,170,DR Congo
-Moses Simon,NGA,"FW,MF",29,Nantes,FRA-Ligue 1,1995,8,10,32,2609,Nigeria
-Mostafa Mohamed,EGY,FW,26,Nantes,FRA-Ligue 1,1997,5,0,30,1252,Egypt
-Saidou Sow,GUI,DF,22,Nantes,FRA-Ligue 1,2002,1,0,9,799,Guinea
-Tino Kadewere,ZIM,MF,28,Nantes,FRA-Ligue 1,1996,1,2,12,512,Zimbabwe
-Ali Abdi,TUN,MF,30,Nice,FRA-Ligue 1,1993,5,2,25,1393,Tunisia
-Antoine Mendy,SEN,"DF,MF",20,Nice,FRA-Ligue 1,2004,0,0,18,825,Senegal
-Badredine Bouanani,ALG,"MF,FW",19,Nice,FRA-Ligue 1,2004,3,3,26,1099,Algeria
-Bernard Nguene,CMR,FW,17,Nice,FRA-Ligue 1,2006,0,0,1,13,Cameroon
-Bilal Brahimi,ALG,MF,24,Nice,FRA-Ligue 1,2000,0,0,2,76,Algeria
-Evann Guessand,CIV,"MF,FW",23,Nice,FRA-Ligue 1,2001,12,8,33,2565,Ivory Coast
-Hicham Boudaoui,ALG,MF,24,Nice,FRA-Ligue 1,1999,2,3,29,2435,Algeria
-Issiaga Camara,GUI,MF,19,Nice,FRA-Ligue 1,2005,0,0,4,20,Guinea
-Jeremie Boga,CIV,"MF,FW",27,Nice,FRA-Ligue 1,1997,1,2,21,1054,Ivory Coast
-Mohamed Abdelmonem,EGY,DF,25,Nice,FRA-Ligue 1,1999,0,0,12,855,Egypt
-Sofiane Diop,MAR,"MF,FW",24,Nice,FRA-Ligue 1,2000,6,4,28,1064,Morocco
-Terem Moffi,NGA,FW,25,Nice,FRA-Ligue 1,1999,1,0,5,58,Nigeria
-Victor Orakpo,NGA,FW,18,Nice,FRA-Ligue 1,2006,0,0,4,36,Nigeria
-Achraf Hakimi,MAR,DF,25,Paris Saint-Germain,FRA-Ligue 1,1998,4,6,25,2066,Morocco
-Ibrahim Mbaye,SEN,FW,16,Paris Saint-Germain,FRA-Ligue 1,2008,1,1,9,340,Senegal
-Amadou Koné,MLI,MF,19,Reims,FRA-Ligue 1,2005,0,0,24,1293,Mali
-Ange Martial Tia,MLI,MF,17,Reims,FRA-Ligue 1,2006,0,0,6,171,Mali
-Cédric Kipré,CIV,DF,27,Reims,FRA-Ligue 1,1996,0,1,28,2190,Ivory Coast
-Eloge Zabi,CIV,MF,17,Reims,FRA-Ligue 1,2006,0,0,2,18,Ivory Coast
-Emmanuel Agbadou,CIV,DF,27,Reims,FRA-Ligue 1,1997,0,0,14,1260,Ivory Coast
-Hafiz Ibrahim,NGA,FW,18,Reims,FRA-Ligue 1,2005,0,1,11,391,Nigeria
-Joseph Okumu,KEN,DF,27,Reims,FRA-Ligue 1,1997,1,0,22,1695,KEN
-Mamadou Diakhon,SEN,"MF,FW",18,Reims,FRA-Ligue 1,2005,2,1,28,858,Senegal
-Marshall Munetsi,ZIM,MF,28,Reims,FRA-Ligue 1,1996,4,2,19,1692,Zimbabwe
-Mohamed Bamba,CIV,MF,19,Reims,FRA-Ligue 1,2004,0,0,2,10,Ivory Coast
-Mory Gbane,CIV,"DF,MF",23,Reims,FRA-Ligue 1,2000,0,1,13,1125,Ivory Coast
-Niama Sissoko,MLI,FW,18,Reims,FRA-Ligue 1,2005,0,0,4,47,Mali
-Oumar Diakité,CIV,FW,20,Reims,FRA-Ligue 1,2003,4,1,26,1628,Ivory Coast
-Yaya Kader Fofana,MLI,"MF,FW",20,Reims,FRA-Ligue 1,2004,1,1,12,634,Mali
-Yehvann Diouf,SEN,GK,24,Reims,FRA-Ligue 1,1999,0,0,34,3060,Senegal
-Alidu Seidu,GHA,DF,24,Rennes,FRA-Ligue 1,2000,0,0,11,803,Ghana
-Amine Gouiri,ALG,"MF,FW",24,Rennes,FRA-Ligue 1,2000,3,2,19,1037,Algeria
-Christopher Wooh,CMR,DF,22,Rennes,FRA-Ligue 1,2001,0,0,20,1456,Cameroon
-Lorenz Assignon,TOG,"MF,DF",24,Rennes,FRA-Ligue 1,2000,3,4,32,2357,Togo
-Mahamadou Nagida,CMR,MF,19,Rennes,FRA-Ligue 1,2005,2,0,12,430,Cameroon
-Mikayil Ngor Faye,SEN,DF,20,Rennes,FRA-Ligue 1,2004,0,0,11,688,Senegal
-Seko Fofana,CIV,MF,29,Rennes,FRA-Ligue 1,1995,1,1,16,844,Ivory Coast
-Augustine Boakye,GHA,"MF,FW",23,Saint-Étienne,FRA-Ligue 1,2000,3,0,17,733,Ghana
-Benjamin Bouchouari,MAR,MF,22,Saint-Étienne,FRA-Ligue 1,2001,1,0,25,1772,Morocco
-Dylan Batubinsika,COD,DF,28,Saint-Étienne,FRA-Ligue 1,1996,1,0,25,2016,DR Congo
-Ibrahim Sissoko,MLI,FW,28,Saint-Étienne,FRA-Ligue 1,1995,3,1,20,819,Mali
-Ibrahima Wadji,SEN,FW,29,Saint-Étienne,FRA-Ligue 1,1995,0,0,10,347,Senegal
-Jibril Othman,TUN,FW,20,Saint-Étienne,FRA-Ligue 1,2004,0,0,1,5,Tunisia
-Yunis Abdelhamid,MAR,DF,36,Saint-Étienne,FRA-Ligue 1,1987,0,0,16,1033,Morocco
-Abakar Sylla,CIV,DF,21,Strasbourg,FRA-Ligue 1,2002,1,0,21,950,Ivory Coast
-Guéla Doué,CIV,"DF,MF",21,Strasbourg,FRA-Ligue 1,2002,1,2,32,2717,Ivory Coast
-Habib Diarra,SEN,"MF,FW",20,Strasbourg,FRA-Ligue 1,2004,4,5,30,2352,Senegal
-Mamadou Sarr,SEN,DF,18,Strasbourg,FRA-Ligue 1,2005,0,1,27,2365,Senegal
-Marvin Senaya,GHA,DF,23,Strasbourg,FRA-Ligue 1,2001,0,0,10,227,Ghana
-Pape Daouda Diongue,SEN,MF,18,Strasbourg,FRA-Ligue 1,2006,1,0,9,78,Senegal
-Saidou Sow,GUI,DF,22,Strasbourg,FRA-Ligue 1,2002,0,1,12,1018,Guinea
-Frank Magri,CMR,FW,24,Toulouse,FRA-Ligue 1,1999,5,1,31,1516,Cameroon
-Logan Costa,CPV,DF,23,Toulouse,FRA-Ligue 1,2001,0,0,1,90,CPV
-Shavy Babicka,GAB,MF,24,Toulouse,FRA-Ligue 1,2000,4,2,30,1186,Gabon
-Zakaria Aboukhlal,MAR,"MF,FW",24,Toulouse,FRA-Ligue 1,2000,7,2,26,1901,Morocco
-Ademola Lookman,NGA,"MF,FW",26,Atalanta,ITA-Serie A,1997,15,5,31,2247,Nigeria
-Ibrahim Sulemana,GHA,MF,21,Atalanta,ITA-Serie A,2003,2,0,9,283,Ghana
-Odilon Kossounou,CIV,DF,23,Atalanta,ITA-Serie A,2001,0,0,18,1125,Ivory Coast
-Oussama El Azzouzi,MAR,MF,23,Bologna,ITA-Serie A,2001,0,0,2,19,Morocco
-Kingstone Mutandwa,ZAM,FW,21,Cagliari,ITA-Serie A,2003,0,0,6,127,ZAM
-Zito Luvumbo,ANG,"FW,MF",22,Cagliari,ITA-Serie A,2002,2,2,26,1606,Angola
-Assane Diao,SEN,"MF,FW",18,Como,ITA-Serie A,2005,8,1,15,1252,Senegal
-Ben Lhassine Kone,CIV,MF,24,Como,ITA-Serie A,2000,0,0,4,51,Ivory Coast
-Christian Kouamé,CIV,"FW,MF",26,Empoli,ITA-Serie A,1997,1,0,8,507,Ivory Coast
-Emmanuel Gyasi,GHA,MF,30,Empoli,ITA-Serie A,1994,2,1,37,3217,Ghana
-Tyronne Ebuehi,NGA,DF,28,Empoli,ITA-Serie A,1995,0,0,4,74,Nigeria
-Youssef Maleh,MAR,MF,25,Empoli,ITA-Serie A,1998,0,1,22,1510,Morocco
-Amir Richardson,MAR,MF,22,Fiorentina,ITA-Serie A,2002,1,1,27,1099,Morocco
-Christian Kouamé,CIV,"MF,FW",26,Fiorentina,ITA-Serie A,1997,0,1,18,622,Ivory Coast
-Sofyan Amrabat,MAR,MF,27,Fiorentina,ITA-Serie A,1996,0,0,2,180,Morocco
-Caleb Ekuban,GHA,FW,30,Genoa,ITA-Serie A,1994,1,3,18,555,Ghana
-David Akpan Ankeye,NGA,FW,22,Genoa,ITA-Serie A,2002,0,0,4,45,Nigeria
-Jean Onana,CMR,MF,24,Genoa,ITA-Serie A,2000,0,0,9,304,Cameroon
-Maxwel Cornet,CIV,MF,27,Genoa,ITA-Serie A,1996,2,1,7,246,Ivory Coast
-Cheikh Niasse,SEN,MF,24,Hellas Verona,ITA-Serie A,2000,0,0,11,755,Senegal
-Dailon Livramento,CPV,"MF,FW",23,Hellas Verona,ITA-Serie A,2001,1,1,29,940,CPV
-Jackson Tchatchoua,CMR,"MF,DF",22,Hellas Verona,ITA-Serie A,2001,2,3,36,3167,Cameroon
-Junior Ajayi,CIV,FW,19,Hellas Verona,ITA-Serie A,2004,0,0,2,13,Ivory Coast
-Reda Belahyane,MAR,MF,20,Hellas Verona,ITA-Serie A,2004,0,2,22,1658,Morocco
-Boulaye Dia,SEN,"MF,FW",27,Lazio,ITA-Serie A,1996,9,3,35,2177,Senegal
-Fisayo Dele-Bashiru,NGA,MF,23,Lazio,ITA-Serie A,2001,3,1,20,947,Nigeria
-Reda Belahyane,MAR,MF,20,Lazio,ITA-Serie A,2004,0,0,6,198,Morocco
-Hamza Rafia,TUN,MF,25,Lecce,ITA-Serie A,1999,0,0,18,1058,Tunisia
-Kialonda,ANG,DF,26,Lecce,ITA-Serie A,1997,0,1,24,2144,Angola
-Lameck Banda,ZAM,"MF,FW",23,Lecce,ITA-Serie A,2001,0,1,15,610,ZAM
-Lassana Coulibaly,MLI,MF,28,Lecce,ITA-Serie A,1996,1,0,38,2667,Mali
-Mohamed Kaba,GUI,MF,22,Lecce,ITA-Serie A,2001,0,0,15,452,Guinea
-Ismaël Bennacer,ALG,MF,26,Milan,ITA-Serie A,1997,0,0,6,300,Algeria
-Samuel Chukwueze,NGA,"MF,FW",25,Milan,ITA-Serie A,1999,3,2,26,925,Nigeria
-Jean-Daniel Akpa-Akpro,CIV,MF,31,Monza,ITA-Serie A,1992,0,0,14,966,Ivory Coast
-Keita Baldé,SEN,FW,29,Monza,ITA-Serie A,1995,2,0,11,638,Senegal
-Andre-Frank Zambo Anguissa,CMR,MF,28,Napoli,ITA-Serie A,1995,6,4,35,2852,Cameroon
-Walid Cheddira,MAR,FW,26,Napoli,ITA-Serie A,1998,0,0,1,12,Morocco
-Ange-Yoan Bonny,CIV,FW,20,Parma,ITA-Serie A,2003,6,4,37,2529,Ivory Coast
-Drissa Camara,CIV,FW,22,Parma,ITA-Serie A,2002,0,0,21,447,Ivory Coast
-Mohamed Haj,TUN,MF,19,Parma,ITA-Serie A,2005,1,2,15,453,Tunisia
-Woyo Coulibaly,MLI,DF,25,Parma,ITA-Serie A,1999,0,1,14,1084,Mali
-Anass Salah-Eddine,MAR,MF,22,Roma,ITA-Serie A,2002,0,1,3,152,Morocco
-Obite N'Dicka,CIV,DF,24,Roma,ITA-Serie A,1999,0,1,38,3420,Ivory Coast
-Adam Masina,MAR,DF,30,Torino,ITA-Serie A,1994,1,2,28,1919,Morocco
-Adrien Tameze,CMR,"MF,DF",30,Torino,ITA-Serie A,1994,0,0,20,649,Cameroon
-Enzo Ebosse,CMR,DF,25,Udinese,ITA-Serie A,1999,0,0,2,90,Cameroon
-Hassane Kamara,CIV,"MF,DF",30,Udinese,ITA-Serie A,1994,1,4,30,2001,Ivory Coast
-Jordan Zemura,ZIM,"MF,DF",24,Udinese,ITA-Serie A,1999,1,2,23,1415,Zimbabwe
-Maduka Okoye,NGA,GK,24,Udinese,ITA-Serie A,1999,0,0,25,2250,Nigeria
-Rui Modesto,ANG,MF,24,Udinese,ITA-Serie A,1999,0,1,20,608,Angola
-Alfred Duncan,GHA,MF,31,Venezia,ITA-Serie A,1993,0,0,16,957,Ghana
-Cheick Oumar Conde,GUI,MF,24,Venezia,ITA-Serie A,2000,0,0,9,151,Guinea
-Fali Candé,GNB,DF,26,Venezia,ITA-Serie A,1998,1,1,17,1530,Guinea-Bissau
-Saad El Haddad,MAR,MF,19,Venezia,ITA-Serie A,2005,0,0,3,30,Morocco
-Frank Onyeka,NGA,MF,26,Augsburg,,1998,0,1,31,2586,Nigeria
-Samuel Essende,COD,FW,26,Augsburg,,1998,7,2,30,1636,DR Congo
-Steve Mounié,BEN,MF,29,Augsburg,,1994,1,0,16,347,Benin
-Adam Aznou,MAR,DF,18,Bayern Munich,,2006,0,0,2,17,Morocco
-Aliou Badara Baldé,GUI,FW,21,Bochum,,2002,0,0,5,91,Guinea
-Ibrahima Sissoko,MLI,MF,26,Bochum,,1997,2,1,32,2610,Mali
-Moritz-Broni Kwarteng,GHA,MF,26,Bochum,,1998,0,0,7,172,Ghana
-Ayman Azhil,MAR,MF,23,Dortmund,,2001,0,0,1,24,Morocco
-Ramy Bensebaini,ALG,DF,29,Dortmund,,1995,1,6,31,2022,Algeria
-Serhou Guirassy,GUI,FW,28,Dortmund,,1996,21,4,30,2598,Guinea
-Ellyes Skhiri,TUN,MF,29,Eintracht Frankfurt,,1995,1,2,30,2231,Tunisia
-Elye Wahi,CIV,FW,21,Eintracht Frankfurt,,2003,0,0,8,196,Ivory Coast
-Fares Chaïbi,ALG,MF,21,Eintracht Frankfurt,,2002,1,3,26,1013,Algeria
-Junior Dina Ebimbe,CMR,MF,23,Eintracht Frankfurt,,2000,0,1,7,293,Cameroon
-Omar Marmoush,EGY,"FW,MF",25,Eintracht Frankfurt,,1999,15,9,17,1448,Egypt
-Nathan N'Goumou,CMR,MF,24,Gladbach,,2000,2,1,19,828,Cameroon
-Bazoumana Touré,CIV,"MF,FW",18,Hoffenheim,,2006,0,3,13,609,Ivory Coast
-Diadie Samassékou,MLI,MF,28,Hoffenheim,,1996,0,0,8,290,Mali
-Gift Orban,NGA,FW,22,Hoffenheim,,2002,4,0,13,687,Nigeria
-Ihlas Bebou,TOG,"FW,MF",30,Hoffenheim,,1994,0,0,1,9,Togo
-Kevin Akpoguma,NGA,DF,29,Hoffenheim,,1995,0,0,32,2220,Nigeria
-Amine Adli,MAR,"MF,FW",24,Leverkusen,,2000,2,0,20,766,Morocco
-Edmond Tapsoba,BFA,DF,25,Leverkusen,,1999,0,0,29,2507,Burkina Faso
-Nathan Tella,NGA,"MF,FW",25,Leverkusen,,1999,2,4,27,1359,Nigeria
-Victor Boniface,NGA,FW,23,Leverkusen,,2000,8,1,19,1008,Nigeria
-Aymen Barkok,MAR,MF,26,Mainz 05,,1998,0,0,4,73,Morocco
-Amadou Haidara,MLI,MF,26,RB Leipzig,,1998,0,1,28,1320,Mali
-Carlo Boukhalfa,MAR,MF,25,St Pauli,,1999,2,0,25,1646,Morocco
-Elias Saad,TUN,"FW,MF",24,St Pauli,,1999,3,2,18,900,Tunisia
-Morgan Guilavogui,GUI,"FW,MF",26,St Pauli,,1998,6,2,25,1807,Guinea
-El Bilal Touré,MLI,FW,22,Stuttgart,,2001,2,1,12,356,Mali
-Rani Khedira,TUN,MF,30,Union Berlin,,1994,1,1,32,2723,Tunisia
-Derrick Köhn,GHA,"MF,DF",25,Werder Bremen,,1999,2,2,27,1343,Ghana
-Felix Agu,NGA,MF,24,Werder Bremen,,1999,3,0,22,1751,Nigeria
-Issa Kaboré,BFA,MF,23,Werder Bremen,,2001,0,0,9,308,Burkina Faso
-Mohamed Amoura,ALG,"FW,MF",24,Wolfsburg,,2000,10,9,31,2467,Algeria
+player,nation_code,position,age,club,league,birth_year,goals,assists,matches_played,minutes,nationality,position_clean,region,goals_per90,assists_per90,goal_contributions_per90
+Thomas Partey,GHA,"MF,DF",31,Arsenal,Premier League,1993,4,2,35,2797,Ghana,"MF,DF",West Africa,0.129,0.064,0.193
+Antoine Semenyo,GHA,MF,24,Bournemouth,Premier League,2000,11,5,37,3203,Ghana,Midfielder,West Africa,0.309,0.14,0.45
+Dango Ouattara,BFA,"MF,FW",22,Bournemouth,Premier League,2002,7,4,32,2005,Burkina Faso,Midfielder/Forward,West Africa,0.314,0.18,0.494
+Bryan Mbeumo,CMR,"MF,FW",24,Brentford,Premier League,1999,20,7,38,3414,Cameroon,Midfielder/Forward,Central Africa,0.527,0.185,0.712
+Frank Onyeka,NGA,MF,26,Brentford,Premier League,1998,0,0,2,25,Nigeria,Midfielder,West Africa,0.0,0.0,0.0
+Yoane Wissa,COD,FW,27,Brentford,Premier League,1996,19,4,35,2919,DR Congo,Forward,Central Africa,0.586,0.123,0.709
+Carlos Baleba,CMR,MF,20,Brighton,Premier League,2004,3,1,34,2661,Cameroon,Midfielder,Central Africa,0.101,0.034,0.135
+Simon Adingra,CIV,MF,22,Brighton,Premier League,2002,2,2,29,1097,Ivory Coast,Midfielder,West Africa,0.164,0.164,0.328
+Tariq Lamptey,GHA,"DF,MF",23,Brighton,Premier League,2000,2,2,15,860,Ghana,Defender/Midfielder,West Africa,0.209,0.209,0.419
+Nicolas Jackson,SEN,FW,23,Chelsea,Premier League,2001,10,5,30,2220,Senegal,Forward,West Africa,0.405,0.203,0.608
+Chadi Riad,MAR,DF,21,Crystal Palace,Premier League,2003,0,0,1,90,Morocco,Defender,North Africa,0.0,0.0,0.0
+Cheick Doucouré,MLI,MF,24,Crystal Palace,Premier League,2000,0,0,13,452,Mali,Midfielder,West Africa,0.0,0.0,0.0
+Ismaila Sarr,SEN,MF,26,Crystal Palace,Premier League,1998,8,6,38,2711,Senegal,Midfielder,West Africa,0.266,0.199,0.465
+Jeffrey Schlupp,GHA,"DF,FW",31,Crystal Palace,Premier League,1992,0,0,12,103,Ghana,Defender/Forward,West Africa,0.0,0.0,0.0
+Jordan Ayew,GHA,"FW,MF",32,Crystal Palace,Premier League,1991,0,0,1,21,Ghana,"FW,MF",West Africa,0.0,0.0,0.0
+Abdoulaye Doucouré,MLI,MF,31,Everton,Premier League,1993,3,2,33,2564,Mali,Midfielder,West Africa,0.105,0.07,0.176
+Beto,GNB,FW,26,Everton,Premier League,1998,8,0,30,1534,Guinea-Bissau,Forward,West Africa,0.469,0.0,0.469
+Idrissa Gana Gueye,SEN,MF,34,Everton,Premier League,1989,0,3,37,3063,Senegal,Midfielder,West Africa,0.0,0.088,0.088
+Iliman Ndiaye,SEN,"MF,FW",24,Everton,Premier League,2000,9,0,33,2430,Senegal,Midfielder/Forward,West Africa,0.333,0.0,0.333
+Alex Iwobi,NGA,MF,28,Fulham,Premier League,1996,9,6,38,2981,Nigeria,Midfielder,West Africa,0.272,0.181,0.453
+Calvin Bassey,NGA,DF,24,Fulham,Premier League,1999,1,0,35,3074,Nigeria,Defender,West Africa,0.029,0.0,0.029
+Issa Diop,MAR,DF,27,Fulham,Premier League,1997,0,0,21,1339,Morocco,Defender,North Africa,0.0,0.0,0.0
+Martial Godo,CIV,"FW,MF",21,Fulham,Premier League,2003,0,0,2,24,Ivory Coast,"FW,MF",West Africa,0.0,0.0,0.0
+Axel Tuanzebe,COD,DF,26,Ipswich Town,Premier League,1997,0,1,22,1710,DR Congo,Defender,Central Africa,0.0,0.053,0.053
+Sam Morsy,EGY,MF,32,Ipswich Town,Premier League,1991,1,1,33,2751,Egypt,Midfielder,North Africa,0.033,0.033,0.065
+Abdul Fatawu Issahaku,GHA,"MF,FW",20,Leicester City,Premier League,2004,0,2,11,579,Ghana,Midfielder/Forward,West Africa,0.0,0.311,0.311
+Bilal El Khannouss,MAR,MF,20,Leicester City,Premier League,2004,2,3,32,2182,Morocco,Midfielder,North Africa,0.082,0.124,0.206
+Jordan Ayew,GHA,MF,32,Leicester City,Premier League,1991,5,0,30,1638,Ghana,Midfielder,West Africa,0.275,0.0,0.275
+Patson Daka,ZAM,"MF,FW",25,Leicester City,Premier League,1998,1,0,23,736,ZAM,Midfielder/Forward,Other Africa,0.122,0.0,0.122
+Wilfred Ndidi,NGA,MF,27,Leicester City,Premier League,1996,0,5,28,2324,Nigeria,Midfielder,West Africa,0.0,0.194,0.194
+Woyo Coulibaly,MLI,DF,25,Leicester City,Premier League,1999,0,0,4,109,Mali,Defender,West Africa,0.0,0.0,0.0
+Mohamed Salah,EGY,MF,32,Liverpool,Premier League,1992,29,18,38,3371,Egypt,Midfielder,North Africa,0.774,0.481,1.255
+Omar Marmoush,EGY,"MF,FW",25,Manchester City,Premier League,1999,7,0,16,1175,Egypt,Midfielder/Forward,North Africa,0.536,0.0,0.536
+Amad Diallo,CIV,"MF,FW",22,Manchester Utd,Premier League,2002,8,6,26,1901,Ivory Coast,Midfielder/Forward,West Africa,0.379,0.284,0.663
+André Onana,CMR,GK,28,Manchester Utd,Premier League,1996,0,0,34,3060,Cameroon,Goalkeeper,Central Africa,0.0,0.0,0.0
+Noussair Mazraoui,MAR,"DF,MF",26,Manchester Utd,Premier League,1997,0,1,37,2838,Morocco,Defender/Midfielder,North Africa,0.0,0.032,0.032
+Ibrahim Sangaré,CIV,MF,26,Nottingham Forest,Premier League,1997,0,1,13,590,Ivory Coast,Midfielder,West Africa,0.0,0.153,0.153
+Ola Aina,NGA,DF,27,Nottingham Forest,Premier League,1996,2,1,35,2995,Nigeria,Defender,West Africa,0.06,0.03,0.09
+Taiwo Awoniyi,NGA,FW,26,Nottingham Forest,Premier League,1997,1,0,26,416,Nigeria,Forward,West Africa,0.216,0.0,0.216
+Willy Boly,CIV,DF,33,Nottingham Forest,Premier League,1991,0,0,6,150,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Joe Aribo,NGA,MF,28,Southampton,Premier League,1996,3,0,32,2013,Nigeria,Midfielder,West Africa,0.134,0.0,0.134
+Kamaldeen Sulemana,GHA,"FW,MF",22,Southampton,Premier League,2002,1,1,26,1402,Ghana,"FW,MF",West Africa,0.064,0.064,0.128
+Maxwel Cornet,CIV,MF,27,Southampton,Premier League,1996,0,0,2,72,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Paul Onuachu,NGA,FW,30,Southampton,Premier League,1994,4,1,25,1050,Nigeria,Forward,West Africa,0.343,0.086,0.429
+Pape Matar Sarr,SEN,MF,21,Tottenham Hotspur,Premier League,2002,3,2,36,1913,Senegal,Midfielder,West Africa,0.141,0.094,0.235
+Yves Bissouma,MLI,MF,27,Tottenham Hotspur,Premier League,1996,2,0,28,1408,Mali,Midfielder,West Africa,0.128,0.0,0.128
+Aaron Wan-Bissaka,COD,"DF,MF",26,West Ham United,Premier League,1997,2,5,36,3154,DR Congo,Defender/Midfielder,Central Africa,0.057,0.143,0.2
+Mohammed Kudus,GHA,"MF,FW",23,West Ham United,Premier League,2000,5,3,32,2590,Ghana,Midfielder/Forward,West Africa,0.174,0.104,0.278
+Boubacar Traoré,MLI,MF,22,Wolves,Premier League,2001,0,0,1,1,Mali,Midfielder,West Africa,0.0,0.0,0.0
+Emmanuel Agbadou,CIV,DF,27,Wolves,Premier League,1997,1,0,16,1410,Ivory Coast,Defender,West Africa,0.064,0.0,0.064
+Mario Lemina,GAB,"MF,DF",30,Wolves,Premier League,1993,1,3,17,1364,Gabon,"MF,DF",Central Africa,0.066,0.198,0.264
+Marshall Munetsi,ZIM,"MF,FW",28,Wolves,Premier League,1996,2,1,14,1078,Zimbabwe,Midfielder/Forward,Southern Africa,0.167,0.083,0.25
+Nasser Djiga,BFA,DF,21,Wolves,Premier League,2002,0,0,5,66,Burkina Faso,Defender,West Africa,0.0,0.0,0.0
+Rayan Aït-Nouri,ALG,"MF,DF",23,Wolves,Premier League,2001,4,7,37,3109,Algeria,"MF,DF",North Africa,0.116,0.203,0.318
+Abde Rebbach,ALG,"MF,FW",25,Alavés,La Liga,1998,0,0,8,385,Algeria,Midfielder/Forward,North Africa,0.0,0.0,0.0
+Abdel Abqar,MAR,DF,25,Alavés,La Liga,1999,0,1,29,2463,Morocco,Defender,North Africa,0.0,0.037,0.037
+Moussa Diarra,MLI,DF,23,Alavés,La Liga,2000,0,0,26,1866,Mali,Defender,West Africa,0.0,0.0,0.0
+Iñaki Williams,GHA,"MF,FW",30,Athletic Club,La Liga,1994,6,8,35,2652,Ghana,Midfielder/Forward,West Africa,0.204,0.271,0.475
+Maroan Sannadi,MAR,FW,23,Athletic Club,La Liga,2001,1,1,16,754,Morocco,Forward,North Africa,0.119,0.119,0.239
+Álvaro djaló,GNB,"MF,FW",24,Athletic Club,La Liga,1999,1,0,17,659,Guinea-Bissau,Midfielder/Forward,West Africa,0.137,0.0,0.137
+Reinildo Mandava,MOZ,"DF,MF",30,Atlético Madrid,La Liga,1994,0,0,19,941,Mozambique,Defender/Midfielder,Southern Africa,0.0,0.0,0.0
+Ilaix Moriba,GUI,MF,21,Celta Vigo,La Liga,2003,1,1,33,2132,Guinea,Midfielder,West Africa,0.042,0.042,0.084
+Jonathan Bamba,CIV,"MF,FW",28,Celta Vigo,La Liga,1996,0,1,12,811,Ivory Coast,Midfielder/Forward,West Africa,0.0,0.111,0.111
+Joseph Aidoo,GHA,DF,28,Celta Vigo,La Liga,1995,0,0,1,2,Ghana,Defender,West Africa,0.0,0.0,0.0
+Omar El Hilali,MAR,DF,20,Espanyol,La Liga,2003,0,2,36,3153,Morocco,Defender,North Africa,0.0,0.057,0.057
+Walid Cheddira,MAR,FW,26,Espanyol,La Liga,1998,1,1,22,640,Morocco,Forward,North Africa,0.141,0.141,0.281
+Allan Nyom,CMR,"MF,DF",36,Getafe,La Liga,1988,1,2,20,887,Cameroon,"MF,DF",Central Africa,0.101,0.203,0.304
+Christantus Uche,NGA,"FW,MF",21,Getafe,La Liga,2003,4,6,33,2486,Nigeria,"FW,MF",West Africa,0.145,0.217,0.362
+Djené,TOG,"DF,MF",32,Getafe,La Liga,1991,0,0,31,2548,Togo,Defender/Midfielder,West Africa,0.0,0.0,0.0
+Ismael Bekhoucha,MAR,DF,19,Getafe,La Liga,2004,0,0,5,69,Morocco,Defender,North Africa,0.0,0.0,0.0
+Aboubacar Bassinga,BFA,MF,19,Las Palmas,La Liga,2005,0,0,1,4,Burkina Faso,Midfielder,West Africa,0.0,0.0,0.0
+Duk,CPV,MF,24,Leganés,La Liga,2000,0,0,10,179,CPV,Midfielder,Other Africa,0.0,0.0,0.0
+Munir El Haddadi,MAR,"MF,FW",28,Leganés,La Liga,1995,4,0,25,862,Morocco,Midfielder/Forward,North Africa,0.418,0.0,0.418
+Seydouba Cissé,GUI,MF,23,Leganés,La Liga,2001,3,1,34,2435,Guinea,Midfielder,West Africa,0.111,0.037,0.148
+Sébastien Haller,CIV,FW,30,Leganés,La Liga,1994,0,0,8,404,Ivory Coast,Forward,West Africa,0.0,0.0,0.0
+Yan Diomandé,CIV,MF,17,Leganés,La Liga,2006,2,1,10,545,Ivory Coast,Midfielder,West Africa,0.33,0.165,0.495
+Yvan Neyou,CMR,MF,27,Leganés,La Liga,1997,1,1,30,2312,Cameroon,Midfielder,Central Africa,0.039,0.039,0.078
+Enzo Boyomo,CMR,DF,22,Osasuna,La Liga,2001,2,0,34,2987,Cameroon,Defender,Central Africa,0.06,0.0,0.06
+Abdul Mumin,GHA,DF,26,Rayo Vallecano,La Liga,1998,2,1,24,2017,Ghana,Defender,West Africa,0.089,0.045,0.134
+Etienne Eto'o,CMR,FW,21,Rayo Vallecano,La Liga,2002,0,0,2,40,Cameroon,Forward,Central Africa,0.0,0.0,0.0
+Pathé Ciss,SEN,"MF,DF",30,Rayo Vallecano,La Liga,1994,4,1,33,2140,Senegal,"MF,DF",West Africa,0.168,0.042,0.21
+Randy Nteka,ANG,FW,26,Rayo Vallecano,La Liga,1997,3,0,24,1129,Angola,Forward,Southern Africa,0.239,0.0,0.239
+Abde Ezzalzouli,MAR,MF,22,Real Betis,La Liga,2001,2,2,32,1984,Morocco,Midfielder,North Africa,0.091,0.091,0.181
+Assane Diao,SEN,FW,18,Real Betis,La Liga,2005,1,2,10,277,Senegal,Forward,West Africa,0.325,0.65,0.975
+Cédric Bakambu,COD,FW,33,Real Betis,La Liga,1991,2,2,25,710,DR Congo,Forward,Central Africa,0.254,0.254,0.507
+Nobel Mendy,SEN,DF,19,Real Betis,La Liga,2004,0,0,2,108,Senegal,Defender,West Africa,0.0,0.0,0.0
+Youssouf Sabaly,SEN,DF,31,Real Betis,La Liga,1993,0,1,22,1581,Senegal,Defender,West Africa,0.0,0.057,0.057
+Brahim Díaz,MAR,"MF,FW",24,Real Madrid,La Liga,1999,4,2,31,1385,Morocco,Midfielder/Forward,North Africa,0.26,0.13,0.39
+Hamari Traoré,MLI,DF,32,Real Sociedad,La Liga,1992,0,1,11,700,Mali,Defender,West Africa,0.0,0.129,0.129
+Nayef Aguerd,MAR,DF,28,Real Sociedad,La Liga,1996,0,0,21,1760,Morocco,Defender,North Africa,0.0,0.0,0.0
+Umar Sadiq,NGA,FW,27,Real Sociedad,La Liga,1997,0,0,7,227,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Akor Adams,NGA,FW,24,Sevilla,La Liga,2000,0,0,4,134,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Chidera Ejuke,NGA,"MF,FW",26,Sevilla,La Liga,1998,2,1,25,966,Nigeria,Midfielder/Forward,West Africa,0.186,0.093,0.28
+Kelechi Iheanacho,NGA,FW,27,Sevilla,La Liga,1996,0,0,9,400,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Mouctar Diakhaby,GUI,DF,27,Valencia,La Liga,1996,2,0,13,653,Guinea,Defender,West Africa,0.276,0.0,0.276
+Umar Sadiq,NGA,FW,27,Valencia,La Liga,1997,5,0,16,825,Nigeria,Forward,West Africa,0.545,0.0,0.545
+Abdulai Juma Bah,SLE,DF,18,Valladolid,La Liga,2006,0,0,12,864,Sierra Leone,Defender,West Africa,0.0,0.0,0.0
+Adam Aznou,MAR,"DF,MF",18,Valladolid,La Liga,2006,0,0,13,876,Morocco,Defender/Midfielder,North Africa,0.0,0.0,0.0
+Amath,SEN,"FW,MF",28,Valladolid,La Liga,1996,0,1,13,375,Senegal,"FW,MF",West Africa,0.0,0.24,0.24
+Anuar,MAR,"MF,FW",29,Valladolid,La Liga,1995,2,0,26,1720,Morocco,Midfielder/Forward,North Africa,0.105,0.0,0.105
+Enzo Boyomo,CMR,DF,22,Valladolid,La Liga,2001,0,0,3,270,Cameroon,Defender,Central Africa,0.0,0.0,0.0
+Ibrahim Alani,NGA,MF,18,Valladolid,La Liga,2006,0,0,3,160,Nigeria,Midfielder,West Africa,0.0,0.0,0.0
+Joseph Aidoo,GHA,DF,28,Valladolid,La Liga,1995,0,0,8,583,Ghana,Defender,West Africa,0.0,0.0,0.0
+Mamadou Sylla,SEN,"FW,MF",30,Valladolid,La Liga,1994,5,1,29,1583,Senegal,"FW,MF",West Africa,0.284,0.057,0.341
+Selim Amallah,MAR,MF,27,Valladolid,La Liga,1996,3,1,24,1376,Morocco,Midfielder,North Africa,0.196,0.065,0.262
+Eric Bailly,CIV,DF,30,Villarreal,La Liga,1994,0,0,12,617,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Ilias Akhomach,MAR,MF,20,Villarreal,La Liga,2004,1,0,11,584,Morocco,Midfielder,North Africa,0.154,0.0,0.154
+Karl Etta Eyong,CMR,FW,20,Villarreal,La Liga,2003,1,0,4,37,Cameroon,Forward,Central Africa,2.432,0.0,2.432
+Logan Costa,CPV,DF,23,Villarreal,La Liga,2001,2,1,32,2587,CPV,Defender,Other Africa,0.07,0.035,0.104
+Nicolas Pépé,CIV,"FW,MF",29,Villarreal,La Liga,1995,3,6,28,1500,Ivory Coast,"FW,MF",West Africa,0.18,0.36,0.54
+Pape Gueye,SEN,"MF,FW",25,Villarreal,La Liga,1999,4,0,34,2224,Senegal,Midfielder/Forward,West Africa,0.162,0.0,0.162
+Abdoulaye Bamba,CIV,DF,34,Angers,Ligue 1,1990,0,0,19,1510,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Bamba Dieng,SEN,FW,24,Angers,Ligue 1,2000,3,0,18,532,Senegal,Forward,West Africa,0.508,0.0,0.508
+Cédric Hountondji,BEN,DF,30,Angers,Ligue 1,1994,0,0,3,270,Benin,Defender,West Africa,0.0,0.0,0.0
+Farid El Melali,ALG,"MF,FW",27,Angers,Ligue 1,1997,2,3,32,1893,Algeria,Midfielder/Forward,North Africa,0.095,0.143,0.238
+Florent Hanin,ALG,DF,34,Angers,Ligue 1,1990,1,2,33,2672,Algeria,Defender,North Africa,0.034,0.067,0.101
+Haris Belkebla,ALG,MF,30,Angers,Ligue 1,1994,0,1,22,1792,Algeria,Midfielder,North Africa,0.0,0.05,0.05
+Himad Abdelli,ALG,MF,24,Angers,Ligue 1,1999,6,1,32,2842,Algeria,Midfielder,North Africa,0.19,0.032,0.222
+Ibrahima Niane,SEN,FW,25,Angers,Ligue 1,1999,3,1,24,943,Senegal,Forward,West Africa,0.286,0.095,0.382
+Jacques Ekomie,GAB,"DF,MF",20,Angers,Ligue 1,2003,0,0,18,697,Gabon,Defender/Midfielder,Central Africa,0.0,0.0,0.0
+Jean-Eudes Aholou,CIV,MF,30,Angers,Ligue 1,1994,2,0,26,1959,Ivory Coast,Midfielder,West Africa,0.092,0.0,0.092
+Jim Allevinah,GAB,MF,29,Angers,Ligue 1,1995,1,3,28,1750,Gabon,Midfielder,Central Africa,0.051,0.154,0.206
+Ousmane Camara,MLI,DF,21,Angers,Ligue 1,2003,0,0,3,252,Mali,Defender,West Africa,0.0,0.0,0.0
+Prosper Peter,NGA,FW,16,Angers,Ligue 1,2007,0,0,2,27,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Yahia Fofana,CIV,GK,23,Angers,Ligue 1,2000,0,0,33,2970,Ivory Coast,Goalkeeper,West Africa,0.0,0.0,0.0
+Zinedine Ferhat,ALG,MF,31,Angers,Ligue 1,1993,2,0,24,849,Algeria,Midfielder,North Africa,0.212,0.0,0.212
+Aristide Zossou,CIV,MF,19,Auxerre,Ligue 1,2005,0,0,3,16,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Assane Dioussé,SEN,MF,26,Auxerre,Ligue 1,1997,0,0,17,663,Senegal,Midfielder,West Africa,0.0,0.0,0.0
+Clément Akpa,CIV,DF,22,Auxerre,Ligue 1,2001,0,1,31,2486,Ivory Coast,Defender,West Africa,0.0,0.036,0.036
+Elisha Owusu,GHA,MF,26,Auxerre,Ligue 1,1997,1,3,28,2344,Ghana,Midfielder,West Africa,0.038,0.115,0.154
+Gabriel Osho,NGA,DF,25,Auxerre,Ligue 1,1998,1,0,20,1654,Nigeria,Defender,West Africa,0.054,0.0,0.054
+Gideon Mensah,GHA,"DF,MF",26,Auxerre,Ligue 1,1998,0,1,29,2280,Ghana,Defender/Midfielder,West Africa,0.0,0.039,0.039
+Hamed Junior Traorè,CIV,MF,24,Auxerre,Ligue 1,2000,10,2,26,2093,Ivory Coast,Midfielder,West Africa,0.43,0.086,0.516
+Lassine Sinayoko,MLI,"FW,MF",24,Auxerre,Ligue 1,1999,5,8,34,2299,Mali,"FW,MF",West Africa,0.196,0.313,0.509
+Lasso Coulibaly,CIV,MF,21,Auxerre,Ligue 1,2002,1,0,3,45,Ivory Coast,Midfielder,West Africa,2.0,0.0,2.0
+Sinaly Diomande,CIV,DF,23,Auxerre,Ligue 1,2001,3,2,23,1945,Ivory Coast,Defender,West Africa,0.139,0.093,0.231
+Abdallah Sima,SEN,"FW,MF",23,Brest,Ligue 1,2001,7,2,27,1238,Senegal,"FW,MF",West Africa,0.509,0.145,0.654
+Abdoulaye Ndiaye,SEN,DF,22,Brest,Ligue 1,2002,1,0,22,1707,Senegal,Defender,West Africa,0.053,0.0,0.053
+Hamidou Makalou,MLI,MF,18,Brest,Ligue 1,2006,0,0,4,32,Mali,Midfielder,West Africa,0.0,0.0,0.0
+Ibrahim Salah,MAR,"MF,FW",22,Brest,Ligue 1,2001,1,1,12,358,Morocco,Midfielder/Forward,North Africa,0.251,0.251,0.503
+Kamory Doumbia,MLI,"MF,FW",21,Brest,Ligue 1,2003,3,2,30,1322,Mali,Midfielder/Forward,West Africa,0.204,0.136,0.34
+Luck Zogbé,CIV,DF,19,Brest,Ligue 1,2005,0,0,13,638,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Mama Samba Baldé,GNB,"FW,MF",28,Brest,Ligue 1,1995,2,3,27,1149,Guinea-Bissau,"FW,MF",West Africa,0.157,0.235,0.392
+Massadio Haïdara,MLI,DF,31,Brest,Ligue 1,1992,0,0,22,1678,Mali,Defender,West Africa,0.0,0.0,0.0
+Sérigné Diop,SEN,FW,19,Brest,Ligue 1,2005,0,0,2,4,Senegal,Forward,West Africa,0.0,0.0,0.0
+Abdoulaye Touré,GUI,MF,30,Le Havre,Ligue 1,1994,10,1,28,2324,Guinea,Midfielder,West Africa,0.387,0.039,0.426
+André Ayew,GHA,FW,34,Le Havre,Ligue 1,1989,4,1,27,1453,Ghana,Forward,West Africa,0.248,0.062,0.31
+Arouna Sangante,SEN,DF,22,Le Havre,Ligue 1,2002,3,0,16,1244,Senegal,Defender,West Africa,0.217,0.0,0.217
+Christopher Opéri,CIV,"MF,DF",27,Le Havre,Ligue 1,1997,0,2,13,1169,Ivory Coast,"MF,DF",West Africa,0.0,0.154,0.154
+Fodé Ballo-Touré,SEN,"DF,MF",27,Le Havre,Ligue 1,1997,0,0,10,589,Senegal,Defender/Midfielder,West Africa,0.0,0.0,0.0
+Issa Soumaré,SEN,"MF,FW",23,Le Havre,Ligue 1,2000,5,4,29,1902,Senegal,Midfielder/Forward,West Africa,0.237,0.189,0.426
+Kandet Diawara,GUI,MF,24,Le Havre,Ligue 1,2000,0,0,1,4,Guinea,Midfielder,West Africa,0.0,0.0,0.0
+Koka,EGY,FW,31,Le Havre,Ligue 1,1993,3,1,16,851,Egypt,Forward,North Africa,0.317,0.106,0.423
+Oussama Targhalline,MAR,MF,22,Le Havre,Ligue 1,2002,0,0,14,990,Morocco,Midfielder,North Africa,0.0,0.0,0.0
+Rassoul Ndiaye,SEN,MF,22,Le Havre,Ligue 1,2001,1,0,27,1061,Senegal,Midfielder,West Africa,0.085,0.0,0.085
+Yanis Zouaoui,ALG,"DF,MF",26,Le Havre,Ligue 1,1998,0,2,17,976,Algeria,Defender/Midfielder,North Africa,0.0,0.184,0.184
+Yassine Kechta,MAR,"MF,FW",22,Le Havre,Ligue 1,2002,2,0,31,2096,Morocco,Midfielder/Forward,North Africa,0.086,0.0,0.086
+Abdulai Juma Bah,SLE,DF,18,Lens,Ligue 1,2006,0,0,10,686,Sierra Leone,Defender,West Africa,0.0,0.0,0.0
+Anass Zaroury,MAR,"MF,FW",23,Lens,Ligue 1,2000,2,2,28,1405,Morocco,Midfielder/Forward,North Africa,0.128,0.128,0.256
+Hamzat Ojediran,NGA,MF,20,Lens,Ligue 1,2003,1,0,17,416,Nigeria,Midfielder,West Africa,0.216,0.0,0.216
+Hervé Koffi,BFA,GK,27,Lens,Ligue 1,1996,0,0,5,450,Burkina Faso,Goalkeeper,West Africa,0.0,0.0,0.0
+M'Bala Nzola,ANG,FW,27,Lens,Ligue 1,1996,6,1,21,1460,Angola,Forward,Southern Africa,0.37,0.062,0.432
+Nampalys Mendy,SEN,MF,32,Lens,Ligue 1,1992,0,1,10,588,Senegal,Midfielder,West Africa,0.0,0.153,0.153
+Neil El Aynaoui,MAR,MF,23,Lens,Ligue 1,2001,8,1,24,1588,Morocco,Midfielder,North Africa,0.453,0.057,0.51
+Ayyoub Bouaddi,MAR,MF,16,Lille,Ligue 1,2007,0,1,24,1151,Morocco,Midfielder,North Africa,0.0,0.078,0.078
+Aïssa Mandi,ALG,DF,32,Lille,Ligue 1,1991,0,0,24,1733,Algeria,Defender,North Africa,0.0,0.0,0.0
+Mohamed Lamine Bayo,GUI,FW,26,Lille,Ligue 1,1998,2,1,12,309,Guinea,Forward,West Africa,0.583,0.291,0.874
+Nabil Bentaleb,ALG,MF,29,Lille,Ligue 1,1994,1,0,10,329,Algeria,Midfielder,North Africa,0.274,0.0,0.274
+Ngal'Ayel Mukau,COD,MF,19,Lille,Ligue 1,2004,0,1,22,1190,DR Congo,Midfielder,Central Africa,0.0,0.076,0.076
+Osame Sahraoui,MAR,MF,23,Lille,Ligue 1,2001,3,3,30,1293,Morocco,Midfielder,North Africa,0.209,0.209,0.418
+Clinton Mata,ANG,DF,31,Lyon,Ligue 1,1992,0,4,29,2370,Angola,Defender,Southern Africa,0.0,0.152,0.152
+Ernest Nuamah,GHA,"MF,FW",20,Lyon,Ligue 1,2003,3,1,23,1052,Ghana,Midfielder/Forward,West Africa,0.257,0.086,0.342
+Gift Orban,NGA,FW,22,Lyon,Ligue 1,2002,2,0,3,186,Nigeria,Forward,West Africa,0.968,0.0,0.968
+Mama Samba Baldé,GNB,"FW,MF",28,Lyon,Ligue 1,1995,0,0,2,33,Guinea-Bissau,"FW,MF",West Africa,0.0,0.0,0.0
+Moussa Niakhate,SEN,DF,28,Lyon,Ligue 1,1996,0,0,31,2726,Senegal,Defender,West Africa,0.0,0.0,0.0
+Paul Akouokou,CIV,MF,26,Lyon,Ligue 1,1997,0,0,2,19,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Saïd Benrahma,ALG,"FW,MF",28,Lyon,Ligue 1,1995,1,3,13,735,Algeria,"FW,MF",North Africa,0.122,0.367,0.49
+Warmed Omari,COM,DF,24,Lyon,Ligue 1,2000,0,0,1,8,COM,Defender,Other Africa,0.0,0.0,0.0
+Wilfried Zaha,CIV,FW,31,Lyon,Ligue 1,1992,0,0,4,73,Ivory Coast,Forward,West Africa,0.0,0.0,0.0
+Amine Gouiri,ALG,FW,24,Marseille,Ligue 1,2000,10,3,14,1048,Algeria,Forward,North Africa,0.859,0.258,1.116
+Amine Harit,MAR,MF,27,Marseille,Ligue 1,1997,2,4,13,519,Morocco,Midfielder,North Africa,0.347,0.694,1.04
+Bamo Meïté,CIV,DF,22,Marseille,Ligue 1,2001,0,0,3,26,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Bilal Nadir,MAR,MF,20,Marseille,Ligue 1,2003,1,0,15,383,Morocco,Midfielder,North Africa,0.235,0.0,0.235
+Elye Wahi,CIV,FW,21,Marseille,Ligue 1,2003,3,1,13,574,Ivory Coast,Forward,West Africa,0.47,0.157,0.627
+Faris Pemi Moumbagna,CMR,FW,24,Marseille,Ligue 1,2000,0,0,1,8,Cameroon,Forward,Central Africa,0.0,0.0,0.0
+Ismaël Bennacer,ALG,MF,26,Marseille,Ligue 1,1997,0,2,12,646,Algeria,Midfielder,North Africa,0.0,0.279,0.279
+Eliesse Ben Seghir,MAR,MF,19,Monaco,Ligue 1,2005,6,3,33,1750,Morocco,Midfielder,North Africa,0.309,0.154,0.463
+George Ilenikhena,NGA,FW,17,Monaco,Ligue 1,2006,3,2,23,717,Nigeria,Forward,West Africa,0.377,0.251,0.628
+Ismail Jakobs,SEN,DF,24,Monaco,Ligue 1,1999,0,0,2,180,Senegal,Defender,West Africa,0.0,0.0,0.0
+Krépin Diatta,SEN,"DF,MF",25,Monaco,Ligue 1,1999,0,0,19,508,Senegal,Defender/Midfielder,West Africa,0.0,0.0,0.0
+Lamine Camara,SEN,MF,20,Monaco,Ligue 1,2004,2,7,29,2054,Senegal,Midfielder,West Africa,0.088,0.307,0.394
+Mohammed Salisu,GHA,DF,25,Monaco,Ligue 1,1999,1,0,15,1023,Ghana,Defender,West Africa,0.088,0.0,0.088
+Wilfried Singo,CIV,DF,23,Monaco,Ligue 1,2000,1,2,27,2096,Ivory Coast,Defender,West Africa,0.043,0.086,0.129
+Akor Adams,NGA,FW,24,Montpellier,Ligue 1,2000,3,1,15,1075,Nigeria,Forward,West Africa,0.251,0.084,0.335
+Andy Delort,ALG,FW,32,Montpellier,Ligue 1,1991,0,0,9,607,Algeria,Forward,North Africa,0.0,0.0,0.0
+Bamo Meïté,CIV,DF,22,Montpellier,Ligue 1,2001,0,0,7,424,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Birama Touré,MLI,"MF,DF",32,Montpellier,Ligue 1,1992,0,0,8,300,Mali,"MF,DF",West Africa,0.0,0.0,0.0
+Boubakar Kouyaté,MLI,DF,27,Montpellier,Ligue 1,1997,0,0,11,756,Mali,Defender,West Africa,0.0,0.0,0.0
+Dimitry Bertaud,COD,GK,26,Montpellier,Ligue 1,1998,0,0,4,360,DR Congo,Goalkeeper,Central Africa,0.0,0.0,0.0
+Enzo Tchato,CMR,"DF,MF",21,Montpellier,Ligue 1,2002,0,0,27,1899,Cameroon,Defender/Midfielder,Central Africa,0.0,0.0,0.0
+Falaye Sacko,MLI,DF,29,Montpellier,Ligue 1,1995,0,1,16,1233,Mali,Defender,West Africa,0.0,0.073,0.073
+Issiaga Sylla,GUI,"DF,MF",30,Montpellier,Ligue 1,1994,1,0,19,1156,Guinea,Defender/Midfielder,West Africa,0.078,0.0,0.078
+Modibo Sagnan,MLI,DF,25,Montpellier,Ligue 1,1999,2,0,27,2141,Mali,Defender,West Africa,0.084,0.0,0.084
+Othmane Maamma,MAR,MF,18,Montpellier,Ligue 1,2005,1,1,12,361,Morocco,Midfielder,North Africa,0.249,0.249,0.499
+Wahbi Khazri,TUN,"FW,MF",33,Montpellier,Ligue 1,1991,1,1,30,1118,Tunisia,"FW,MF",North Africa,0.081,0.081,0.161
+Wilfried Ndollo,CMR,DF,19,Montpellier,Ligue 1,2005,0,0,8,401,Cameroon,Defender,Central Africa,0.0,0.0,0.0
+Alban Lafont,CIV,GK,25,Nantes,Ligue 1,1999,0,0,12,1080,Ivory Coast,Goalkeeper,West Africa,0.0,0.0,0.0
+Ignatius Ganago,CMR,MF,25,Nantes,Ligue 1,1999,0,0,11,241,Cameroon,Midfielder,Central Africa,0.0,0.0,0.0
+Jean-Charles Castelletto,CMR,"DF,MF",29,Nantes,Ligue 1,1995,0,0,30,2620,Cameroon,Defender/Midfielder,Central Africa,0.0,0.0,0.0
+Jean-Philippe Gbamin,CIV,MF,28,Nantes,Ligue 1,1995,0,0,14,216,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Meschak Elia,COD,FW,26,Nantes,Ligue 1,1997,1,0,8,170,DR Congo,Forward,Central Africa,0.529,0.0,0.529
+Moses Simon,NGA,"FW,MF",29,Nantes,Ligue 1,1995,8,10,32,2609,Nigeria,"FW,MF",West Africa,0.276,0.345,0.621
+Mostafa Mohamed,EGY,FW,26,Nantes,Ligue 1,1997,5,0,30,1252,Egypt,Forward,North Africa,0.359,0.0,0.359
+Saidou Sow,GUI,DF,22,Nantes,Ligue 1,2002,1,0,9,799,Guinea,Defender,West Africa,0.113,0.0,0.113
+Tino Kadewere,ZIM,MF,28,Nantes,Ligue 1,1996,1,2,12,512,Zimbabwe,Midfielder,Southern Africa,0.176,0.352,0.527
+Ali Abdi,TUN,MF,30,Nice,Ligue 1,1993,5,2,25,1393,Tunisia,Midfielder,North Africa,0.323,0.129,0.452
+Antoine Mendy,SEN,"DF,MF",20,Nice,Ligue 1,2004,0,0,18,825,Senegal,Defender/Midfielder,West Africa,0.0,0.0,0.0
+Badredine Bouanani,ALG,"MF,FW",19,Nice,Ligue 1,2004,3,3,26,1099,Algeria,Midfielder/Forward,North Africa,0.246,0.246,0.491
+Bernard Nguene,CMR,FW,17,Nice,Ligue 1,2006,0,0,1,13,Cameroon,Forward,Central Africa,0.0,0.0,0.0
+Bilal Brahimi,ALG,MF,24,Nice,Ligue 1,2000,0,0,2,76,Algeria,Midfielder,North Africa,0.0,0.0,0.0
+Evann Guessand,CIV,"MF,FW",23,Nice,Ligue 1,2001,12,8,33,2565,Ivory Coast,Midfielder/Forward,West Africa,0.421,0.281,0.702
+Hicham Boudaoui,ALG,MF,24,Nice,Ligue 1,1999,2,3,29,2435,Algeria,Midfielder,North Africa,0.074,0.111,0.185
+Issiaga Camara,GUI,MF,19,Nice,Ligue 1,2005,0,0,4,20,Guinea,Midfielder,West Africa,0.0,0.0,0.0
+Jeremie Boga,CIV,"MF,FW",27,Nice,Ligue 1,1997,1,2,21,1054,Ivory Coast,Midfielder/Forward,West Africa,0.085,0.171,0.256
+Mohamed Abdelmonem,EGY,DF,25,Nice,Ligue 1,1999,0,0,12,855,Egypt,Defender,North Africa,0.0,0.0,0.0
+Sofiane Diop,MAR,"MF,FW",24,Nice,Ligue 1,2000,6,4,28,1064,Morocco,Midfielder/Forward,North Africa,0.508,0.338,0.846
+Terem Moffi,NGA,FW,25,Nice,Ligue 1,1999,1,0,5,58,Nigeria,Forward,West Africa,1.552,0.0,1.552
+Victor Orakpo,NGA,FW,18,Nice,Ligue 1,2006,0,0,4,36,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Achraf Hakimi,MAR,DF,25,Paris Saint-Germain,Ligue 1,1998,4,6,25,2066,Morocco,Defender,North Africa,0.174,0.261,0.436
+Ibrahim Mbaye,SEN,FW,16,Paris Saint-Germain,Ligue 1,2008,1,1,9,340,Senegal,Forward,West Africa,0.265,0.265,0.529
+Amadou Koné,MLI,MF,19,Reims,Ligue 1,2005,0,0,24,1293,Mali,Midfielder,West Africa,0.0,0.0,0.0
+Ange Martial Tia,MLI,MF,17,Reims,Ligue 1,2006,0,0,6,171,Mali,Midfielder,West Africa,0.0,0.0,0.0
+Cédric Kipré,CIV,DF,27,Reims,Ligue 1,1996,0,1,28,2190,Ivory Coast,Defender,West Africa,0.0,0.041,0.041
+Eloge Zabi,CIV,MF,17,Reims,Ligue 1,2006,0,0,2,18,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Emmanuel Agbadou,CIV,DF,27,Reims,Ligue 1,1997,0,0,14,1260,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Hafiz Ibrahim,NGA,FW,18,Reims,Ligue 1,2005,0,1,11,391,Nigeria,Forward,West Africa,0.0,0.23,0.23
+Joseph Okumu,KEN,DF,27,Reims,Ligue 1,1997,1,0,22,1695,KEN,Defender,Other Africa,0.053,0.0,0.053
+Mamadou Diakhon,SEN,"MF,FW",18,Reims,Ligue 1,2005,2,1,28,858,Senegal,Midfielder/Forward,West Africa,0.21,0.105,0.315
+Marshall Munetsi,ZIM,MF,28,Reims,Ligue 1,1996,4,2,19,1692,Zimbabwe,Midfielder,Southern Africa,0.213,0.106,0.319
+Mohamed Bamba,CIV,MF,19,Reims,Ligue 1,2004,0,0,2,10,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Mory Gbane,CIV,"DF,MF",23,Reims,Ligue 1,2000,0,1,13,1125,Ivory Coast,Defender/Midfielder,West Africa,0.0,0.08,0.08
+Niama Sissoko,MLI,FW,18,Reims,Ligue 1,2005,0,0,4,47,Mali,Forward,West Africa,0.0,0.0,0.0
+Oumar Diakité,CIV,FW,20,Reims,Ligue 1,2003,4,1,26,1628,Ivory Coast,Forward,West Africa,0.221,0.055,0.276
+Yaya Kader Fofana,MLI,"MF,FW",20,Reims,Ligue 1,2004,1,1,12,634,Mali,Midfielder/Forward,West Africa,0.142,0.142,0.284
+Yehvann Diouf,SEN,GK,24,Reims,Ligue 1,1999,0,0,34,3060,Senegal,Goalkeeper,West Africa,0.0,0.0,0.0
+Alidu Seidu,GHA,DF,24,Rennes,Ligue 1,2000,0,0,11,803,Ghana,Defender,West Africa,0.0,0.0,0.0
+Amine Gouiri,ALG,"MF,FW",24,Rennes,Ligue 1,2000,3,2,19,1037,Algeria,Midfielder/Forward,North Africa,0.26,0.174,0.434
+Christopher Wooh,CMR,DF,22,Rennes,Ligue 1,2001,0,0,20,1456,Cameroon,Defender,Central Africa,0.0,0.0,0.0
+Lorenz Assignon,TOG,"MF,DF",24,Rennes,Ligue 1,2000,3,4,32,2357,Togo,"MF,DF",West Africa,0.115,0.153,0.267
+Mahamadou Nagida,CMR,MF,19,Rennes,Ligue 1,2005,2,0,12,430,Cameroon,Midfielder,Central Africa,0.419,0.0,0.419
+Mikayil Ngor Faye,SEN,DF,20,Rennes,Ligue 1,2004,0,0,11,688,Senegal,Defender,West Africa,0.0,0.0,0.0
+Seko Fofana,CIV,MF,29,Rennes,Ligue 1,1995,1,1,16,844,Ivory Coast,Midfielder,West Africa,0.107,0.107,0.213
+Augustine Boakye,GHA,"MF,FW",23,Saint-Étienne,Ligue 1,2000,3,0,17,733,Ghana,Midfielder/Forward,West Africa,0.368,0.0,0.368
+Benjamin Bouchouari,MAR,MF,22,Saint-Étienne,Ligue 1,2001,1,0,25,1772,Morocco,Midfielder,North Africa,0.051,0.0,0.051
+Dylan Batubinsika,COD,DF,28,Saint-Étienne,Ligue 1,1996,1,0,25,2016,DR Congo,Defender,Central Africa,0.045,0.0,0.045
+Ibrahim Sissoko,MLI,FW,28,Saint-Étienne,Ligue 1,1995,3,1,20,819,Mali,Forward,West Africa,0.33,0.11,0.44
+Ibrahima Wadji,SEN,FW,29,Saint-Étienne,Ligue 1,1995,0,0,10,347,Senegal,Forward,West Africa,0.0,0.0,0.0
+Jibril Othman,TUN,FW,20,Saint-Étienne,Ligue 1,2004,0,0,1,5,Tunisia,Forward,North Africa,0.0,0.0,0.0
+Yunis Abdelhamid,MAR,DF,36,Saint-Étienne,Ligue 1,1987,0,0,16,1033,Morocco,Defender,North Africa,0.0,0.0,0.0
+Abakar Sylla,CIV,DF,21,Strasbourg,Ligue 1,2002,1,0,21,950,Ivory Coast,Defender,West Africa,0.095,0.0,0.095
+Guéla Doué,CIV,"DF,MF",21,Strasbourg,Ligue 1,2002,1,2,32,2717,Ivory Coast,Defender/Midfielder,West Africa,0.033,0.066,0.099
+Habib Diarra,SEN,"MF,FW",20,Strasbourg,Ligue 1,2004,4,5,30,2352,Senegal,Midfielder/Forward,West Africa,0.153,0.191,0.344
+Mamadou Sarr,SEN,DF,18,Strasbourg,Ligue 1,2005,0,1,27,2365,Senegal,Defender,West Africa,0.0,0.038,0.038
+Marvin Senaya,GHA,DF,23,Strasbourg,Ligue 1,2001,0,0,10,227,Ghana,Defender,West Africa,0.0,0.0,0.0
+Pape Daouda Diongue,SEN,MF,18,Strasbourg,Ligue 1,2006,1,0,9,78,Senegal,Midfielder,West Africa,1.154,0.0,1.154
+Saidou Sow,GUI,DF,22,Strasbourg,Ligue 1,2002,0,1,12,1018,Guinea,Defender,West Africa,0.0,0.088,0.088
+Frank Magri,CMR,FW,24,Toulouse,Ligue 1,1999,5,1,31,1516,Cameroon,Forward,Central Africa,0.297,0.059,0.356
+Logan Costa,CPV,DF,23,Toulouse,Ligue 1,2001,0,0,1,90,CPV,Defender,Other Africa,0.0,0.0,0.0
+Shavy Babicka,GAB,MF,24,Toulouse,Ligue 1,2000,4,2,30,1186,Gabon,Midfielder,Central Africa,0.304,0.152,0.455
+Zakaria Aboukhlal,MAR,"MF,FW",24,Toulouse,Ligue 1,2000,7,2,26,1901,Morocco,Midfielder/Forward,North Africa,0.331,0.095,0.426
+Ademola Lookman,NGA,"MF,FW",26,Atalanta,Serie A,1997,15,5,31,2247,Nigeria,Midfielder/Forward,West Africa,0.601,0.2,0.801
+Ibrahim Sulemana,GHA,MF,21,Atalanta,Serie A,2003,2,0,9,283,Ghana,Midfielder,West Africa,0.636,0.0,0.636
+Odilon Kossounou,CIV,DF,23,Atalanta,Serie A,2001,0,0,18,1125,Ivory Coast,Defender,West Africa,0.0,0.0,0.0
+Oussama El Azzouzi,MAR,MF,23,Bologna,Serie A,2001,0,0,2,19,Morocco,Midfielder,North Africa,0.0,0.0,0.0
+Kingstone Mutandwa,ZAM,FW,21,Cagliari,Serie A,2003,0,0,6,127,ZAM,Forward,Other Africa,0.0,0.0,0.0
+Zito Luvumbo,ANG,"FW,MF",22,Cagliari,Serie A,2002,2,2,26,1606,Angola,"FW,MF",Southern Africa,0.112,0.112,0.224
+Assane Diao,SEN,"MF,FW",18,Como,Serie A,2005,8,1,15,1252,Senegal,Midfielder/Forward,West Africa,0.575,0.072,0.647
+Ben Lhassine Kone,CIV,MF,24,Como,Serie A,2000,0,0,4,51,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Christian Kouamé,CIV,"FW,MF",26,Empoli,Serie A,1997,1,0,8,507,Ivory Coast,"FW,MF",West Africa,0.178,0.0,0.178
+Emmanuel Gyasi,GHA,MF,30,Empoli,Serie A,1994,2,1,37,3217,Ghana,Midfielder,West Africa,0.056,0.028,0.084
+Tyronne Ebuehi,NGA,DF,28,Empoli,Serie A,1995,0,0,4,74,Nigeria,Defender,West Africa,0.0,0.0,0.0
+Youssef Maleh,MAR,MF,25,Empoli,Serie A,1998,0,1,22,1510,Morocco,Midfielder,North Africa,0.0,0.06,0.06
+Amir Richardson,MAR,MF,22,Fiorentina,Serie A,2002,1,1,27,1099,Morocco,Midfielder,North Africa,0.082,0.082,0.164
+Christian Kouamé,CIV,"MF,FW",26,Fiorentina,Serie A,1997,0,1,18,622,Ivory Coast,Midfielder/Forward,West Africa,0.0,0.145,0.145
+Sofyan Amrabat,MAR,MF,27,Fiorentina,Serie A,1996,0,0,2,180,Morocco,Midfielder,North Africa,0.0,0.0,0.0
+Caleb Ekuban,GHA,FW,30,Genoa,Serie A,1994,1,3,18,555,Ghana,Forward,West Africa,0.162,0.486,0.649
+David Akpan Ankeye,NGA,FW,22,Genoa,Serie A,2002,0,0,4,45,Nigeria,Forward,West Africa,0.0,0.0,0.0
+Jean Onana,CMR,MF,24,Genoa,Serie A,2000,0,0,9,304,Cameroon,Midfielder,Central Africa,0.0,0.0,0.0
+Maxwel Cornet,CIV,MF,27,Genoa,Serie A,1996,2,1,7,246,Ivory Coast,Midfielder,West Africa,0.732,0.366,1.098
+Cheikh Niasse,SEN,MF,24,Hellas Verona,Serie A,2000,0,0,11,755,Senegal,Midfielder,West Africa,0.0,0.0,0.0
+Dailon Livramento,CPV,"MF,FW",23,Hellas Verona,Serie A,2001,1,1,29,940,CPV,Midfielder/Forward,Other Africa,0.096,0.096,0.191
+Jackson Tchatchoua,CMR,"MF,DF",22,Hellas Verona,Serie A,2001,2,3,36,3167,Cameroon,"MF,DF",Central Africa,0.057,0.085,0.142
+Junior Ajayi,CIV,FW,19,Hellas Verona,Serie A,2004,0,0,2,13,Ivory Coast,Forward,West Africa,0.0,0.0,0.0
+Reda Belahyane,MAR,MF,20,Hellas Verona,Serie A,2004,0,2,22,1658,Morocco,Midfielder,North Africa,0.0,0.109,0.109
+Boulaye Dia,SEN,"MF,FW",27,Lazio,Serie A,1996,9,3,35,2177,Senegal,Midfielder/Forward,West Africa,0.372,0.124,0.496
+Fisayo Dele-Bashiru,NGA,MF,23,Lazio,Serie A,2001,3,1,20,947,Nigeria,Midfielder,West Africa,0.285,0.095,0.38
+Reda Belahyane,MAR,MF,20,Lazio,Serie A,2004,0,0,6,198,Morocco,Midfielder,North Africa,0.0,0.0,0.0
+Hamza Rafia,TUN,MF,25,Lecce,Serie A,1999,0,0,18,1058,Tunisia,Midfielder,North Africa,0.0,0.0,0.0
+Kialonda,ANG,DF,26,Lecce,Serie A,1997,0,1,24,2144,Angola,Defender,Southern Africa,0.0,0.042,0.042
+Lameck Banda,ZAM,"MF,FW",23,Lecce,Serie A,2001,0,1,15,610,ZAM,Midfielder/Forward,Other Africa,0.0,0.148,0.148
+Lassana Coulibaly,MLI,MF,28,Lecce,Serie A,1996,1,0,38,2667,Mali,Midfielder,West Africa,0.034,0.0,0.034
+Mohamed Kaba,GUI,MF,22,Lecce,Serie A,2001,0,0,15,452,Guinea,Midfielder,West Africa,0.0,0.0,0.0
+Ismaël Bennacer,ALG,MF,26,Milan,Serie A,1997,0,0,6,300,Algeria,Midfielder,North Africa,0.0,0.0,0.0
+Samuel Chukwueze,NGA,"MF,FW",25,Milan,Serie A,1999,3,2,26,925,Nigeria,Midfielder/Forward,West Africa,0.292,0.195,0.486
+Jean-Daniel Akpa-Akpro,CIV,MF,31,Monza,Serie A,1992,0,0,14,966,Ivory Coast,Midfielder,West Africa,0.0,0.0,0.0
+Keita Baldé,SEN,FW,29,Monza,Serie A,1995,2,0,11,638,Senegal,Forward,West Africa,0.282,0.0,0.282
+Andre-Frank Zambo Anguissa,CMR,MF,28,Napoli,Serie A,1995,6,4,35,2852,Cameroon,Midfielder,Central Africa,0.189,0.126,0.316
+Walid Cheddira,MAR,FW,26,Napoli,Serie A,1998,0,0,1,12,Morocco,Forward,North Africa,0.0,0.0,0.0
+Ange-Yoan Bonny,CIV,FW,20,Parma,Serie A,2003,6,4,37,2529,Ivory Coast,Forward,West Africa,0.214,0.142,0.356
+Drissa Camara,CIV,FW,22,Parma,Serie A,2002,0,0,21,447,Ivory Coast,Forward,West Africa,0.0,0.0,0.0
+Mohamed Haj,TUN,MF,19,Parma,Serie A,2005,1,2,15,453,Tunisia,Midfielder,North Africa,0.199,0.397,0.596
+Woyo Coulibaly,MLI,DF,25,Parma,Serie A,1999,0,1,14,1084,Mali,Defender,West Africa,0.0,0.083,0.083
+Anass Salah-Eddine,MAR,MF,22,Roma,Serie A,2002,0,1,3,152,Morocco,Midfielder,North Africa,0.0,0.592,0.592
+Obite N'Dicka,CIV,DF,24,Roma,Serie A,1999,0,1,38,3420,Ivory Coast,Defender,West Africa,0.0,0.026,0.026
+Adam Masina,MAR,DF,30,Torino,Serie A,1994,1,2,28,1919,Morocco,Defender,North Africa,0.047,0.094,0.141
+Adrien Tameze,CMR,"MF,DF",30,Torino,Serie A,1994,0,0,20,649,Cameroon,"MF,DF",Central Africa,0.0,0.0,0.0
+Enzo Ebosse,CMR,DF,25,Udinese,Serie A,1999,0,0,2,90,Cameroon,Defender,Central Africa,0.0,0.0,0.0
+Hassane Kamara,CIV,"MF,DF",30,Udinese,Serie A,1994,1,4,30,2001,Ivory Coast,"MF,DF",West Africa,0.045,0.18,0.225
+Jordan Zemura,ZIM,"MF,DF",24,Udinese,Serie A,1999,1,2,23,1415,Zimbabwe,"MF,DF",Southern Africa,0.064,0.127,0.191
+Maduka Okoye,NGA,GK,24,Udinese,Serie A,1999,0,0,25,2250,Nigeria,Goalkeeper,West Africa,0.0,0.0,0.0
+Rui Modesto,ANG,MF,24,Udinese,Serie A,1999,0,1,20,608,Angola,Midfielder,Southern Africa,0.0,0.148,0.148
+Alfred Duncan,GHA,MF,31,Venezia,Serie A,1993,0,0,16,957,Ghana,Midfielder,West Africa,0.0,0.0,0.0
+Cheick Oumar Conde,GUI,MF,24,Venezia,Serie A,2000,0,0,9,151,Guinea,Midfielder,West Africa,0.0,0.0,0.0
+Fali Candé,GNB,DF,26,Venezia,Serie A,1998,1,1,17,1530,Guinea-Bissau,Defender,West Africa,0.059,0.059,0.118
+Saad El Haddad,MAR,MF,19,Venezia,Serie A,2005,0,0,3,30,Morocco,Midfielder,North Africa,0.0,0.0,0.0
